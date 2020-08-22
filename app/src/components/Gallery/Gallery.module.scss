@@ -1,3 +1,5 @@
+@import '../../styles/variable.scss';
+
 .carousel {
   display: flex;
   align-items: center;
@@ -10,9 +12,9 @@
 .galleryBtn {
   width: 4rem;
   height: 4rem;
-  border: 1px solid blue;
+  border: 1px solid $color-primary-light;
   border-Radius: 3rem;
   background-color: transparent;
-  color: blue;
+  color: $color-primary-light;
   font-size: 3rem;
 }

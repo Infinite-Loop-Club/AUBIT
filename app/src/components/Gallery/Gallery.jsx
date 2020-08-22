@@ -14,13 +14,13 @@ export default function Gallery() {
       <ButtonBack className={styles.galleryBtn}>{"<"}</ButtonBack>
       <Slider className={styles.slider}>
         <Slide index={0}>
-          I am the first Slide.
+          <img src='images/slide-1.png' alt='slide' />
         </Slide>
         <Slide index={1}>
-          I am the second Slide.
+          <img src='images/slide-2.png' alt='slide' />
         </Slide>
         <Slide index={2}>
-          I am the third Slide.
+          <img src='images/slide-3.png' alt='slide' />
         </Slide>
       </Slider>
       <ButtonNext className={styles.galleryBtn}> {">"} </ButtonNext>
