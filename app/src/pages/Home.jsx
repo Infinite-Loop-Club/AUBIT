@@ -57,21 +57,25 @@ export default function Home() {
                   <ol className={styles.flash__list}>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a >
@@ -83,11 +87,13 @@ export default function Home() {
                   <ol className={styles.flash__list}>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
@@ -99,17 +105,19 @@ export default function Home() {
                   <ol className={styles.flash__list}>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-link" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
+                        <span className="icon-link" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
                     <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
-
+                        <span className="icon-link" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a >
