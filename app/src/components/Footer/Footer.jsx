@@ -13,26 +13,31 @@ export default function Footer() {
             <ul className={styles.social__list}>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
+                  <span className="icon-mail" style={{ marginRight: "1rem" }}></span>
                   <p className={styles.social__list_text}>annauniv@gmail.com</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href="#ab">
+                  <span className="icon-facebook" style={{ marginRight: "1rem" }}></span>
                   <p className={styles.social__list_text}>Anna University,Trichy</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
+                  <span className="icon-twitter" style={{ marginRight: "1rem" }}></span>
                   <p className={styles.social__list_text}>aubit</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
+                  <span className="icon-linkedin" style={{ marginRight: "1rem" }}></span>
                   <p className={styles.social__list_text}>aubit</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
+                  <span className="icon-youtube" style={{ marginRight: "1rem" }}></span>
                   <p className={styles.social__list_text}>aubit</p>
                 </a>
               </li>
