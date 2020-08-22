@@ -31,8 +31,7 @@ export default function App() {
                 <img src="images/slide-3.png" alt="slide-3" />
               </div>
             </div>
-
-          </div >
+          </div>
 
           <div className={styles.flash}>
             <div className={styles.tab__trigger}>
@@ -65,9 +64,9 @@ export default function App() {
                     <li className={styles.flash__item}>
                       <span className={styles.flash__item_text}>Upcoming event</span>
                     </li>
-                  </a >
-                </ol >
-              </div >
+                  </a>
+                </ol>
+              </div>
 
               <input type="radio" id="tab2" name="1" />
               <div className={styles.tab__content}>
@@ -82,8 +81,8 @@ export default function App() {
                       <span className={styles.flash__item_text}>Upcoming event</span>
                     </li>
                   </a>
-                </ol >
-              </div >
+                </ol>
+              </div>
 
               <input type="radio" id="tab3" name="1" />
               <div className={styles.tab__content}>
@@ -103,15 +102,14 @@ export default function App() {
 
                       <span className={styles.flash__item_text}>New announcement</span>
                     </li>
-                  </a >
-                </ol >
-              </div >
-            </div >
-          </div >
-        </div >
-      </div >
-    </section >
+                  </a>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   );
 }
-
