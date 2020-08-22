@@ -1,0 +1,261 @@
+@import '../../styles/mediaQueryManager.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+@import '../../styles/utilities.scss';
+
+
+header {
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  &_container {
+    @include setWidth;
+    padding: 3rem 0;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    z-index: 9999;
+    transition: padding .3s;
+  }
+
+  &__brand {
+    width: 4rem;
+    height: 4rem;
+    margin-right: auto;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+
+    &_logo {
+      @include fullSizeImage;
+    }
+
+    &_text {
+      color: $color-primary-light;
+      margin-left: 1.5rem;
+    }
+
+  }
+
+  &__list {
+    list-style: none;
+
+    @include respond(phone) {
+      position: fixed;
+      right: 0;
+      max-height: 0;
+      width: 100%;
+      top: 7rem;
+      background-color: $color-white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transform: translateY(-150%);
+      padding: 3rem 3rem 2rem 3rem;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  &-active {
+    transform: translateY(0%);
+    opacity: 1;
+    max-height: 400rem;
+  }
+
+  &-active &__list {
+    max-height: 400rem;
+  }
+
+  &__link {
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-gray-8;
+      display: inline-flex;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 50%;
+        border-radius: 1px;
+        background-color: $color-primary-light;
+
+        @include respond(phone) {
+          left: 0;
+          bottom: -.5rem;
+          transform: none;
+        }
+
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &-active,
+    &:active {
+      color: $color-primary-light !important;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    @include respond(phone) {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.nav__dropdown {
+  background-color: $color-white;
+  position: absolute;
+  min-width: 22rem;
+  right: 50%;
+  margin-top: 1rem;
+  transform: translateX(50%);
+  border-radius: 1rem;
+  box-shadow: 2px 1rem 2.4rem rgba($color-black, .4);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .2s;
+  z-index: 5000;
+
+  @include respond(phone) {
+    position: relative;
+    box-shadow: none;
+  }
+
+  &_link {
+    text-decoration: none;
+    color: initial;
+    display: block;
+    padding: 1rem 2rem;
+
+    &:hover {
+      background-color: $color-primary-light;
+      color: $color-white;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+}
+
+.nav__item:hover>.nav__dropdown {
+  max-height: 60rem;
+  opacity: 1;
+}
+
+// Sticky Nav
+
+.sticky {
+  margin: 0 auto;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: $color-white;
+  box-shadow: 0 2px 3px rgba($color-primary-light, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+//hamburger
+.burger {
+  display: none;
+  cursor: pointer;
+
+  @include respond(phone) {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  .burger__line {
+
+    position: relative;
+    transform: translateY(1rem);
+    width: 1.5rem;
+
+    &,
+    &::before,
+    &::after {
+      height: 2px;
+      background-color: $color-primary-light;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 3rem;
+      position: absolute;
+      left: 0;
+      transition: all .2s;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .9rem;
+    }
+
+    &--toggle {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+
+    }
+
+  }
+}
+
+
+
+.white-bg {
+  background-color: $color-white;
+}

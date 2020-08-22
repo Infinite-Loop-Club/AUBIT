@@ -1,0 +1,19 @@
+@keyframes marquee {
+  0% {
+    transform: translateY(18rem);
+  }
+
+  100% {
+    transform: translateY(-18rem);
+  }
+}
+
+@keyframes marquee-hor {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

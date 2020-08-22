@@ -1,0 +1,28 @@
+@import './mixins.scss';
+
+.u-upper {
+  text-transform: uppercase !important;
+}
+
+.u-image-full-size {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.u-mb-large {
+  margin-bottom: 7.5rem !important;
+}
+
+.u-iblock {
+  display: inline-block !important;
+}
+
+.u-margin-tb-xl {
+  margin-top: 20rem !important;
+  margin-bottom: 20rem !important;
+}
+
+.u-align-with-margin {
+  @include setWidth;
+}

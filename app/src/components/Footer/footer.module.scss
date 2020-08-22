@@ -1,0 +1,189 @@
+@import '../../styles/mediaQueryManager.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+@import '../../styles/utilities.scss';
+
+
+.footer {
+
+  color: $color-white;
+
+  &__top {
+    background-color: $color-primary-light;
+    padding: 3rem 0;
+
+    &_inner {
+      @include setWidth;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &>div {
+        width: 33.3333%;
+      }
+
+      @media screen and (max-width: 500px) {
+        &>div {
+          width: 50%;
+        }
+
+        .footer__social {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+
+    @include respond(micro) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__quick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+
+    @include respond(tiny) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.social__list {
+  list-style: none;
+
+  @include respond(tiny) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+    margin-right: 1rem;
+    transition: all .3s;
+  }
+
+  &_text {
+    @include respond(tiny) {
+      display: none;
+    }
+  }
+
+  &_item {
+    &:not(:last-child) {
+      margin-bottom: 1.3rem;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: currentColor;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      transition: all .3s;
+    }
+
+    &:hover {
+
+      & .social__list--icon,
+      & .social__list--text {
+        fill: $color-black;
+        color: $color-black;
+      }
+    }
+  }
+
+}
+
+.quick__link {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(tiny) {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  &_item {
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: currentColor;
+      font-size: 1.5rem;
+      display: inline-block;
+      transition: all .3s;
+
+      @include respond(micro) {
+        font-size: 1.3rem;
+      }
+    }
+
+    a:hover {
+      color: $color-black;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__heading {
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1.3rem;
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 635px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__heading2 {
+    font-size: 1.3rem;
+
+    @media only screen and (max-width: 700px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__detail {
+    font-size: 1.3rem;
+
+    &:first-child {
+      margin-top: .5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.copyrights {
+  background-color: $color-primary-dark;
+  text-align: center;
+  color: $color-white;
+  padding: 1.4rem 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}

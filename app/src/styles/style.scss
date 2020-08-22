@@ -1,0 +1,41 @@
+@import './mediaQueryManager.scss';
+@import './variable.scss';
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: $font-family-default;
+  font-size: 62.5%; // 10px
+
+  scroll-behavior: smooth;
+
+  @include respond(tab-port) {
+    font-size: 56.25%; // 9px
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 8px
+  }
+
+  @include respond(huge) {
+    font-size: 75%; // 12px
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-white;
+  display: inline-block;
+}
