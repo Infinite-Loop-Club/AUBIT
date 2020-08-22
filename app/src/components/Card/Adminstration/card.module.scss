@@ -1,0 +1,46 @@
+@import '../../../styles/mediaQueryManager.scss';
+@import '../../../styles/mixins.scss';
+@import '../../../styles/variable.scss';
+@import '../../../styles/utilities.scss';
+
+@import '../../../styles/base/typography.scss';
+
+
+.card{
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.img{
+  overflow: hidden;
+  margin-right: 1rem;
+
+  img{
+    width: 15rem;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+  &__phn,&__mail{
+    display: flex;
+    align-items: center;
+
+    p{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+
+}

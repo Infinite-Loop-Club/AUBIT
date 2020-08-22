@@ -1,0 +1,18 @@
+@import '../../styles/mediaQueryManager.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+@import '../../styles/utilities.scss';
+
+@import '../../styles/base/typography.scss';
+@import '../../styles/base/animation.scss';
+
+
+.main {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  
+  & > * {
+    margin-top: 3rem !important;
+  }
+
+}

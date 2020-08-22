@@ -4,7 +4,7 @@ import cx from 'classnames';
 import styles from "./header.module.scss";
 
 
-export default function Footer() {
+export default function Header(props) {
 
   const [sticky, setSticky] = useState(false);
 
@@ -22,8 +22,8 @@ export default function Footer() {
 
   return (
     <header>
-      <nav className={sticky ? cx(styles.nav, styles.sticky) : styles.nav}>
-        <div className={styles.nav_container} style={sticky ? { padding: "1.5rem 0" } : {}}>
+      <nav className={(sticky || props.sticky) ? cx(styles.nav, styles.sticky) : styles.nav}>
+        <div className={styles.nav_container} style={(sticky || props.sticky) ? { padding: "1.5rem 0" } : {}}>
           <div className={styles.nav__brand}>
             <img src="images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
@@ -31,11 +31,11 @@ export default function Footer() {
 
           <ul className={styles.nav__list}>
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Home</a>
+              <a href="/" className={styles.nav__link}>Home</a>
             </li>
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Administration </a>
-              <div className={styles.nav__dropdown}>
+              <a href="/administration" className={styles.nav__link}>Administration </a>
+              {/* <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
                   <a href="#ab" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Dean</li>
@@ -45,13 +45,13 @@ export default function Footer() {
                   </a>
                   <a href="#ab" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Registrar</li>
-                  </a >
+                  </a>
                   <a href="#ab" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Additional Registrar</li>
-                  </a >
-                </ol >
-              </div >
-            </li >
+                  </a>
+                </ol>
+              </div> */}
+            </li>
             <li className={styles.nav__item}>
               <a href="#ab" className={styles.nav__link}>Academic</a>
               <div className={styles.nav__dropdown}>
