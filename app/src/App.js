@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Administration from "./pages/Administration/Administration";
-import Test from "./Test";
+// import Test from "./Test";
 import Gallery from './components/Gallery';
 
 export default function App() {
