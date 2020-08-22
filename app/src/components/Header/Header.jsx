@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import cx from 'classnames';
 
 import styles from "./header.module.scss";
 
 
 export default function Footer() {
 
+  const [sticky, setSticky] = useState(false);
 
-  // React.useEffect(() => {
-  //   window.onscroll = (event) => {
-  //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-  //       console.log("Sticky NAv");
-  //     } else {
-  //       console.log("Nrml nav");
-  //     }
-  //   }
-  // }, []);
+
+  useEffect(() => {
+    window.onscroll = (event) => {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    }
+  }, []);
 
 
   return (
     <header>
-      <nav className={styles.nav}>
-        <div className={styles.nav_container}>
+      <nav className={sticky ? cx(styles.nav, styles.sticky) : styles.nav}>
+        <div className={styles.nav_container} style={sticky ? { padding: "1.5rem 0" } : {}}>
           <div className={styles.nav__brand}>
             <img src="images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
