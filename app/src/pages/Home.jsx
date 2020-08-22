@@ -55,22 +55,22 @@ export default function Home() {
                 <input type="radio" checked id="tab1" name="1" />
                 <div className={styles.tab__content}>
                   <ol className={styles.flash__list}>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
@@ -81,12 +81,12 @@ export default function Home() {
                 <input type="radio" id="tab2" name="1" />
                 <div className={styles.tab__content}>
                   <ol className={styles.flash__list}>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
@@ -97,17 +97,17 @@ export default function Home() {
                 <input type="radio" id="tab3" name="1" />
                 <div className={styles.tab__content}>
                   <ol className={styles.flash__list}>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
                     </a>
-                    <a href="#" className={styles.flash__link}>
+                    <a href="#ab" className={styles.flash__link}>
                       <li className={styles.flash__item}>
 
                         <span className={styles.flash__item_text}>New announcement</span>
