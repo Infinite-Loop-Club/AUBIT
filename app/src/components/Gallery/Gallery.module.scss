@@ -3,10 +3,17 @@
 .carousel {
   display: flex;
   align-items: center;
+  flex: 1 1 90%;
 }
 
 .slider {
   flex: 1 0 80%;
+  height: 20rem;
+
+  img {
+    object-fit: contain;
+    object-position: center;
+  }
 }
 
 .galleryBtn {

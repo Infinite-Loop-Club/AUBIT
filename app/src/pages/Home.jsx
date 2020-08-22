@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
 import styles from "./style.module.scss";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -26,9 +27,9 @@ export default function Home() {
           </div>
 
           <div className={styles.hero__bottom}>
-            <div className={styles.gallery}>
+            {/* <div className={styles.gallery}> */}
 
-              <div className={styles.gallery__showcase}>
+            {/* <div className={styles.gallery__showcase}>
                 <div className={cx(styles.gallery__image, styles.gallery__image_1)}>
                   <img src="images/slide-1.png" alt="slide-1" />
                 </div>
@@ -38,9 +39,11 @@ export default function Home() {
                 <div className={cx(styles.gallery__image, styles.gallery__image_3)}>
                   <img src="images/slide-3.png" alt="slide-3" />
                 </div>
-              </div>
+              </div> */}
 
-            </div>
+            <Gallery />
+
+            {/* </div> */}
 
             <div className={styles.flash}>
               <div className={styles.tab__trigger}>
