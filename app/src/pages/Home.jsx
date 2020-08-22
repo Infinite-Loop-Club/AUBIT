@@ -6,7 +6,6 @@ import Footer from "../components/Footer/Footer";
 
 import styles from "./style.module.scss";
 
-
 export default function Home() {
   return (
     <Fragment>
@@ -41,7 +40,7 @@ export default function Home() {
                 </div>
               </div>
 
-            </div >
+            </div>
 
             <div className={styles.flash}>
               <div className={styles.tab__trigger}>
@@ -78,9 +77,9 @@ export default function Home() {
                         <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
-                    </a >
-                  </ol >
-                </div >
+                    </a>
+                  </ol>
+                </div>
 
                 <input type="radio" id="tab2" name="1" />
                 <div className={styles.tab__content}>
@@ -97,8 +96,8 @@ export default function Home() {
                         <span className={styles.flash__item_text}>Upcoming event</span>
                       </li>
                     </a>
-                  </ol >
-                </div >
+                  </ol>
+                </div>
 
                 <input type="radio" id="tab3" name="1" />
                 <div className={styles.tab__content}>
@@ -120,14 +119,14 @@ export default function Home() {
                         <span className="icon-link" style={{ marginRight: "1rem" }}></span>
                         <span className={styles.flash__item_text}>New announcement</span>
                       </li>
-                    </a >
-                  </ol >
-                </div >
-              </div >
-            </div >
-          </div >
-        </div >
-      </section >
+                    </a>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <section className={styles.feature}>
