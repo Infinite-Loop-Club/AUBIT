@@ -46,13 +46,13 @@ export default function Home() {
             <div className={styles.flash}>
               <div className={styles.tab__trigger}>
                 <ul>
-                  <li><label for="tab1">News</label></li>
-                  <li><label for="tab2">Events</label></li>
-                  <li><label for="tab3">Links</label></li>
+                  <li><label htmlFor="tab1">News</label></li>
+                  <li><label htmlFor="tab2">Events</label></li>
+                  <li><label htmlFor="tab3">Links</label></li>
                 </ul>
               </div>
               <div className={styles.tab__container_top}>
-                <input type="radio" checked id="tab1" name="1" />
+                <input type="radio" defaultChecked id="tab1" name="1" />
                 <div className={styles.tab__content}>
                   <ol className={styles.flash__list}>
                     <a href="#ab" className={styles.flash__link}>
@@ -179,7 +179,7 @@ export default function Home() {
       <section className={styles.location}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15683.913988048065!2d78.73218891102297!3d10.658776773945343!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7120582d954fcb0f!2sAnna%20University%20Regional%20Office%20Tiruchirappalli%2C!5e0!3m2!1sen!2sin!4v1595313950789!5m2!1sen!2sin"
-          title="map" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0">
+          title="map" frameBorder="0" style={{ border: 0 }} allowFullScreen="" aria-hidden="false" tabIndex="0">
         </iframe>
       </section>
       <Footer />

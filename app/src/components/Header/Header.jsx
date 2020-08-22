@@ -4,6 +4,19 @@ import styles from "./header.module.scss";
 
 
 export default function Footer() {
+
+
+  // React.useEffect(() => {
+  //   window.onscroll = (event) => {
+  //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  //       console.log("Sticky NAv");
+  //     } else {
+  //       console.log("Nrml nav");
+  //     }
+  //   }
+  // }, []);
+
+
   return (
     <header>
       <nav className={styles.nav}>
