@@ -1,0 +1,27 @@
+@import '../../styles/variable.scss';
+
+.carousel {
+  display: flex;
+  align-items: center;
+  flex: 1 1 90%;
+}
+
+.slider {
+  flex: 1 0 80%;
+  height: 20rem;
+
+  img {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.galleryBtn {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid $color-primary-light;
+  border-Radius: 3rem;
+  background-color: transparent;
+  color: $color-primary-light;
+  font-size: 3rem;
+}
