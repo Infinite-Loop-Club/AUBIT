@@ -1,0 +1,47 @@
+@import '../../styles/mediaQueryManager.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/variable.scss';
+@import '../../styles/utilities.scss';
+@import '../../styles/base/typography.scss';
+
+
+.main {
+
+  @include setWidth;
+
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+
+.vmContainer,.courses{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
+  margin-bottom: 3rem;
+}
+
+
+.vision{
+  margin-bottom: 2rem;
+}
+
+
+.courses{
+
+  font-size: 1.5rem;
+  font-family: inherit;
+
+  &__container{
+    display: flex;
+  }
+  
+  ul{
+    flex: 1 1 50%;
+    list-style: none;
+
+    @include respond(phone){
+      flex: 1 1 100%;
+    }
+  }
+}
