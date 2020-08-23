@@ -42,6 +42,7 @@
   &__top {
     margin-top: 7rem;
     margin-bottom: -7rem;
+    z-index: 10;
 
     @include respond(phone) {
       margin-bottom: -2rem;
@@ -76,6 +77,7 @@
   @include respond(phone) {
     top: 45%;
     max-width: 100%;
+    margin-right: auto;
   }
 
   &__showcase {
