@@ -3,24 +3,24 @@ import styles from "./card.module.scss";
 
 
 
-export default () => {
+export default (props) => {
   return <div className={styles.card}>
     <div className={styles.img}>
-      <img src="./images/VC.png" alt={"vice chancellor"} />
+      <img src={props.image} alt={"vice chancellor"} />
     </div>
     <div className={styles.details}>
       <h3 className={styles.heading_primary_main}>
-        Dr.M.K. Surrapa
+        {props.name}
       </h3>
-      <p className={styles.description}>VICE CHANCELLOR</p>
-      <h6>Intercom : 7005</h6>
+      <p className={styles.description}>{props.designation}</p>
+      <h6>Intercom : {props.inter}</h6>
       <div className={styles.details__phn}>
         <span className="icon-phone" style={{ color: "#a61d22" }}></span>
-        <p>22357006 / 22353445</p>
+        <p>{props.phn}</p>
       </div>
       <div className={styles.details__mail}>
         <span className="icon-mail" style={{ color: "#a61d22" }}></span>
-        <p>vc@annauniv.edu</p>
+        <p>{props.mail}</p>
       </div>
     </div>
   </div>

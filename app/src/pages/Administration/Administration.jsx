@@ -10,10 +10,38 @@ export default () => {
   return <Fragment>
     <Header sticky />
     <main className={styles.main}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card
+        name="Dr.M.K. Surrapa"
+        designation="VICE CHANCELLOR"
+        image="./images/VC.png"
+        inter="7005"
+        phn="22357006 / 22353445"
+        mail="vc@annauniv.edu"
+      />
+      <Card
+        name="Dr.M.K. Surrapa"
+        designation="VICE CHANCELLOR"
+        image="./images/VC.png"
+        inter="7005"
+        phn="22357006 / 22353445"
+        mail="vc@annauniv.edu"
+      />
+      <Card
+        name="Dr.M.K. Surrapa"
+        designation="VICE CHANCELLOR"
+        image="./images/VC.png"
+        inter="7005"
+        phn="22357006 / 22353445"
+        mail="vc@annauniv.edu"
+      />
+      <Card
+        name="Dr.M.K. Surrapa"
+        designation="VICE CHANCELLOR"
+        image="./images/VC.png"
+        inter="7005"
+        phn="22357006 / 22353445"
+        mail="vc@annauniv.edu"
+      />
     </main>
     <Footer />
   </Fragment>
