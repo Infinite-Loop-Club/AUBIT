@@ -15,11 +15,11 @@ export default (props) => {
         <p className={styles.inter}>Intercom : {props.inter}</p>
         <div className={styles.details__phn}>
           <span className="icon-phone" style={{ color: "#a61d22" }}></span>
-          <p>{props.phn}</p>
+          <a href={`mailto:${props.phn}`}>{props.phn}</a>
         </div>
         <div className={styles.details__mail}>
           <span className="icon-mail" style={{ color: "#a61d22" }}></span>
-          <p>{props.mail}</p>
+          <a href={`mailto:${props.mail}`}>{props.mail}</a>
         </div>
       </div>
     </div>
