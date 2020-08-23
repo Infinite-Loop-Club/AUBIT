@@ -27,23 +27,9 @@ export default function Home() {
           </div>
 
           <div className={styles.hero__bottom}>
-            {/* <div className={styles.gallery}> */}
-
-            {/* <div className={styles.gallery__showcase}>
-                <div className={cx(styles.gallery__image, styles.gallery__image_1)}>
-                  <img src="images/slide-1.png" alt="slide-1" />
-                </div>
-                <div className={cx(styles.gallery__image, styles.gallery__image_2)}>
-                  <img src="images/slide-2.png" alt="slide-2" />
-                </div>
-                <div className={cx(styles.gallery__image, styles.gallery__image_3)}>
-                  <img src="images/slide-3.png" alt="slide-3" />
-                </div>
-              </div> */}
-
-            <Gallery />
-
-            {/* </div> */}
+            <div className={styles.gallery}>
+              <Gallery />
+            </div>
 
             <div className={styles.flash}>
               <div className={styles.tab__trigger}>
