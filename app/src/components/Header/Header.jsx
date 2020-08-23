@@ -62,7 +62,7 @@ export default function Header(props) {
                   <a href="#ab" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Courses</li>
                   </a >
-                  <a href="#ab" className={styles.nav__dropdown_link}>
+                  <a href="/departments" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Departments</li>
                   </a >
                 </ol >

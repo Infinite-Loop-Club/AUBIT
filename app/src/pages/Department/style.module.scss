@@ -10,7 +10,18 @@
   margin-bottom: 3rem;
 }
 
-.img{
-  width: 100%;
+.card{
   height: 25rem;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  .text{
+    color: $color-white;
+    position: absolute;
+    bottom: 5%;
+  }
 }
