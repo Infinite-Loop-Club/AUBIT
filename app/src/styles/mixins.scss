@@ -20,11 +20,11 @@
 }
 
 @mixin setWidth {
-  max-width: 110rem;
+  width: 110rem;
   margin: 0 auto;
 
   @include respond(tab-land) {
-    max-width: 90%;
+    width: 90%;
   }
 }
 
