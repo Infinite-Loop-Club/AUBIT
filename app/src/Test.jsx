@@ -1,11 +1,13 @@
 import React from "react";
 
-import Card from "./components/Card/Adminstration/Card";
+import Accordion from "./components/Accordion/Accordion"
 
 
 
 export default () => {
   return <div>
-    <Card />
+    <Accordion title="A">
+      <p>aaaaaa</p>
+    </Accordion>
   </div>
 }
