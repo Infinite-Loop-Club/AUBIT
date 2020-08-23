@@ -7,19 +7,14 @@
 
 .card {
   display: flex;
-  border-radius: 1rem;
-  box-shadow: 1px 0.3rem 1.2rem rgba($color-black, 0.4);
   max-width: 50rem;
   margin: 0 auto;
-}
-
-.heading_primary_main {
-  font-size: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0.3rem 1.2rem rgba($color-black, 0.4);
 }
 
 .img {
   overflow: hidden;
-  margin-right: 1rem;
 
   img {
     width: 15rem;
@@ -30,25 +25,39 @@
   }
 }
 
-.description {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
 .details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.5rem;
+
+  .heading_primary_main {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .designation {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .inter {
+    font-size: 1.4rem;
+  }
 
   &__phn,
   &__mail {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     p {
       font-size: 1.5rem;
       margin-left: 1rem;
     }
+  }
+
+  &__phn {
+    letter-spacing: .1em;
   }
 }
