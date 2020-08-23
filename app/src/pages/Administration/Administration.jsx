@@ -12,7 +12,7 @@ export default () => {
       <main className={styles.main}>
         <Card
           name="Dr.M.K. Surrapa"
-          designation="VICE CHANCELLOR"
+          designation="Vice chancellor"
           image="./images/administration/vc.png"
           inter="7005"
           phn="22357006 / 22353445"
@@ -28,7 +28,7 @@ export default () => {
         />
         <Card
           name="Dr.S. Selladurai"
-          designation="ADDITIONAL REGISTRAR"
+          designation="Additional Registrar"
           image="./images/administration/addlregistrar.png"
           inter="9405"
           phn="22357010"
@@ -36,8 +36,9 @@ export default () => {
         />
         <Card
           name="Dr.T. Senthil Kumar"
-          designation="PROFESSOR & DEAN"
+          designation="Professor & Dean"
           image="./images/administration/dean.png"
+          inter="null"
           phn="0431-2407946"
           mail="kmtsenthil@gmail.com"
         />
