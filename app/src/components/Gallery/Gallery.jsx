@@ -1,29 +1,54 @@
-import React from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.es.css";
-import styles from './Gallery.module.scss';
+import React, { useState } from "react";
+import styles from "./Gallery.module.scss";
 
 export default function Gallery() {
+  const [index, setIndex] = useState(0);
+  const slides = [
+    "images/slide-2.png",
+    "images/slide-3.png",
+    "images/slide-31.png",
+    "images/slide-1.png",
+    "images/slide-5.png"
+  ];
+
+  const previousSlide = () => {
+    if (index <= 0) {
+      setIndex(slides.length - 3);
+    } else setIndex(index - 1);
+  };
+
+  const nextSlide = () => {
+    if (index === slides.length - 3) setIndex(0);
+    else setIndex(index + 1);
+  };
+
   return (
-    <CarouselProvider
-      naturalSlideWidth={50}
-      naturalSlideHeight={5}
-      totalSlides={3}
-      className={styles.carousel}
-    >
-      <ButtonBack className={styles.galleryBtn}>{"<"}</ButtonBack>
-      <Slider className={styles.slider}>
-        <Slide index={0}>
-          <img src='images/slide-1.png' alt='slide' />
-        </Slide>
-        <Slide index={1}>
-          <img src='images/slide-2.png' alt='slide' />
-        </Slide>
-        <Slide index={2}>
-          <img src='images/slide-3.png' alt='slide' />
-        </Slide>
-      </Slider>
-      <ButtonNext className={styles.galleryBtn}> {">"} </ButtonNext>
-    </CarouselProvider>
+    <div className={styles.gallery}>
+      <div className={styles.galleryWrapper}>
+        <button className={styles.btn} onClick={previousSlide}>
+          <span className='icon-chevron-right' style={{ transform: 'rotate(180deg)' }} />
+        </button>
+        <div className={styles.slider}>
+          <img
+            className={styles.galleryImage}
+            src={slides[index]}
+            alt="slide"
+          />
+          <img
+            className={styles.galleryImage}
+            src={slides[index + 1]}
+            alt={slides[index + 1]}
+          />
+          <img
+            className={styles.galleryImage}
+            src={slides[index + 2]}
+            alt={slides[index + 2]}
+          />
+        </div>
+        <button className={styles.btn} onClick={nextSlide}>
+          <span className='icon-chevron-right' />
+        </button>
+      </div>
+    </div>
   );
 }

@@ -10,7 +10,7 @@
   margin-bottom: 3rem;
 }
 
-.card{
+.card {
   height: 25rem;
   background-position: center;
   background-size: cover;
@@ -18,8 +18,20 @@
   padding: 2.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
+  box-shadow: 0 .4rem .8rem rgba($color-black, .5);
+  transition: all .3s;
+  cursor: pointer;
 
-  .text{
+  &:hover {
+    filter: brightness(150%);
+    transform: translateY(-1rem);
+
+    .text {
+      color: #eee;
+    }
+  }
+
+  .text {
     color: $color-white;
     position: absolute;
     bottom: 5%;
