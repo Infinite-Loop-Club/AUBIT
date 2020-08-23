@@ -38,7 +38,7 @@ export default () => {
           name="Dr.T. Senthil Kumar"
           designation="Professor & Dean"
           image="./images/administration/dean.png"
-          inter="null"
+          inter="0000"
           phn="0431-2407946"
           mail="kmtsenthil@gmail.com"
         />
