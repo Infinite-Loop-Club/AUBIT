@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./styles/style.scss";
+import "./styles/grid.scss";
 import "./styles/icon.css"
 
 import App from "./App";
