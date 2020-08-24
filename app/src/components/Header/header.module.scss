@@ -66,13 +66,13 @@ header {
     }
   }
 
-  &-active {
+  &__active {
     transform: translateY(0%);
     opacity: 1;
     max-height: 400rem;
   }
 
-  &-active &__list {
+  &__active &__list {
     max-height: 400rem;
   }
 
@@ -116,7 +116,7 @@ header {
       }
     }
 
-    &-active,
+    &_active,
     &:active {
       color: $color-primary-light !important;
     }
@@ -236,7 +236,7 @@ header {
       top: .9rem;
     }
 
-    &--toggle {
+    &_toggle {
       background-color: transparent;
 
       &::before {
@@ -256,6 +256,6 @@ header {
 
 
 
-.white-bg {
+.white_bg {
   background-color: $color-white;
 }
