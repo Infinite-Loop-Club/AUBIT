@@ -1,13 +1,4 @@
 import React from "react";
+import StaffCard from "./components/Card/Staff";
 
-import Accordion from "./components/Accordion/Accordion"
-
-
-
-export default () => {
-  return <div>
-    <Accordion title="A">
-      <p>aaaaaa</p>
-    </Accordion>
-  </div>
-}
+export default () => <div style={{ display: "grid", height: '100vh', placeItems: 'center' }}> <StaffCard /> </div>;
