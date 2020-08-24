@@ -1,0 +1,41 @@
+@import '../../styles/variable.scss';
+
+.gallery {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 16rem;
+    height: 12rem;
+    border-radius: .2rem;
+
+    &,
+    &>* {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 .5rem rgba($color-primary-dark, .5);
+    transition: all .4s;
+
+    &:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 .8rem rgba($color-primary-dark, .7);
+    }
+  }
+}
