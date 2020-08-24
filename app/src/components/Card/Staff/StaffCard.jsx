@@ -15,8 +15,11 @@ export default function StaffCard() {
       </div>
 
       <div className={classes.card__cta}>
-        <a href='#link' className={classes.card__link}>Website</a>
-        <a href='#link' className={classes.card__link}>Facebook</a>
+        <a href='#link' className={classes.card__link}>
+          <span className='icon-mail' />
+        </a>
+        <a href='#link' className={classes.card__link}>
+          <span className='icon-paperclip' /></a>
       </div>
     </div>
   )

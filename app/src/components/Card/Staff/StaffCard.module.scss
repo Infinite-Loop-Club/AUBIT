@@ -6,6 +6,11 @@
   display: inline-block;
   overflow: hidden;
   position: relative;
+  transition: box-shadow .5s;
+
+  &:hover {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+  }
 
   &::after {
     content: '';
@@ -26,7 +31,7 @@
   }
 
   &__frame {
-    padding: 3rem 4rem;
+    padding: 3rem 4rem 1rem 4rem;
     text-align: center;
     z-index: 10;
   }
@@ -79,16 +84,34 @@
   &__cta {
     display: block;
     width: 100%;
-    padding: 1rem;
+    padding: .5rem;
     background-color: $color-primary-light;
     color: $color-white;
-    transform: translateY(4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5.5rem);
     transition: transform .5s;
   }
 
   &__link {
     text-decoration: none;
     color: inherit;
+    padding: 1rem;
+    margin: 0 .5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+    &>span {
+      display: block;
+    }
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
   }
 
   &:hover &__cta {
