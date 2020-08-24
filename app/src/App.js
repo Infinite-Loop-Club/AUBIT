@@ -17,7 +17,6 @@ export default function App() {
         <Route path="/departments" exact component={Department} />
         <Route path='/test' exact component={Test} />
 
-
         <Route path="/auto" exact component={Automobile} />
       </Switch>
     </Router>
