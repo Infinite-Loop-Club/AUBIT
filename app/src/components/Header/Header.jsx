@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import cx from 'classnames';
 
 import styles from "./header.module.scss";
@@ -6,30 +6,42 @@ import styles from "./header.module.scss";
 
 export default function Header(props) {
 
-  const [sticky, setSticky] = useState(false);
+  // const [sticky, setSticky] = useState(false);
+  const [ham, setHam] = useState(false);
 
 
-  useEffect(() => {
-    window.onscroll = (event) => {
-      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-        setSticky(true);
-      } else {
-        setSticky(false);
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   window.onscroll = (event) => {
+  //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  //       setSticky(true);
+  //     } else {
+  //       setSticky(false);
+  //     }
+  //   }
+  // }, []);
+
+
+  function handleCLick() {
+    setHam(old => !old);
+  }
 
 
   return (
     <header>
-      <nav className={(sticky || props.sticky) ? cx(styles.nav, styles.sticky) : styles.nav}>
-        <div className={styles.nav_container} style={(sticky || props.sticky) ? { padding: "1.5rem 0" } : {}}>
+      <nav className=
+        {props.sticky ?
+          (ham ? cx(styles.nav, styles.white_bg, styles.sticky) : cx(styles.nav, styles.sticky))
+          : (ham ? cx(styles.nav, styles.white_bg) : styles.nav)
+        }>
+        {/* <nav className={ham ? cx(styles.nav, styles.white_bg) : styles.nav}> */}
+        {/* <nav className={(sticky || props.sticky) ? cx(styles.nav, styles.sticky) : styles.nav}> */}
+        <div className={styles.nav_container} style={props.sticky ? { padding: "1.5rem 0" } : {}}>
           <div className={styles.nav__brand}>
             <img src="images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
           </div>
 
-          <ul className={styles.nav__list}>
+          <ul className={ham ? cx(styles.nav__list, styles.nav__active) : styles.nav__list}>
             <li className={styles.nav__item}>
               <a href="/" className={styles.nav__link}>Home</a>
             </li>
@@ -53,14 +65,11 @@ export default function Header(props) {
               </div> */}
             </li>
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Academic</a>
+              <p className={styles.nav__link} style={{ cursor: "pointer" }}>Academic</p>
               <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
                   <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Admission</li>
-                  </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Courses</li>
+                    <li className={styles.nav__dropdown_item}>Courses Offered</li>
                   </a >
                   <a href="/departments" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Departments</li>
@@ -69,7 +78,7 @@ export default function Header(props) {
               </div >
             </li >
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Features & Services</a>
+              <p className={styles.nav__link} style={{ cursor: "pointer" }}>Features & Services</p>
               <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
                   <a href="#ab" className={styles.nav__dropdown_link}>
@@ -89,8 +98,8 @@ export default function Header(props) {
             </li >
           </ul >
 
-          <div className={styles.burger}>
-            <div className={styles.burger__line}>&nbsp;</div>
+          <div className={styles.burger} onClick={handleCLick}>
+            <div className={ham ? cx(styles.burger__line, styles.burger__line_toggle) : styles.burger__line}>&nbsp;</div>
           </div>
         </div >
       </nav >
