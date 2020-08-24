@@ -3,7 +3,7 @@ import classes from './ImageGallery.module.scss';
 
 function GalleryItem({ source, name }) {
   return (
-    <a className={classes.gallery__item}>
+    <a href='#popup' className={classes.gallery__item}>
       <img className={classes.gallery__image} src={source} alt={name} />
     </a>
   );

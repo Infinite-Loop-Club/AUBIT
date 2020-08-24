@@ -6,7 +6,7 @@ export default function StaffCard({ style, image, name, designation, mail, resum
     <div className={classes.card}>
       <div className={classes.card__frame}>
         <div className={classes.card__figure}>
-          <img className={classes.card__image} src={image} />
+          <img className={classes.card__image} src={image} alt={name} />
         </div>
         <div className={classes.card__details}>
           <h3 className={classes.card__details_name}>{name}</h3>
