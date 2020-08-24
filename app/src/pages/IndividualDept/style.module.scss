@@ -1,96 +1,88 @@
-@import '../../styles/mediaQueryManager.scss';
-@import '../../styles/mixins.scss';
-@import '../../styles/variable.scss';
-@import '../../styles/utilities.scss';
-@import '../../styles/base/typography.scss';
-
+@import "../../styles/mediaQueryManager.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/variable.scss";
+@import "../../styles/utilities.scss";
+@import "../../styles/base/typography.scss";
 
 .main {
-
   @include setWidth;
 
   margin-top: 10rem;
   margin-bottom: 3rem;
 }
 
-
-.vmContainer,.courses{
+.vmContainer,
+.courses {
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
+  box-shadow: 1px 0.3rem 1.2rem rgba($color-black, 0.4);
   margin-bottom: 3rem;
 }
 
-
-.vision{
+.vision {
   margin-bottom: 2rem;
 }
 
-
-.courses{
-
+.courses {
   font-size: 1.5rem;
   font-family: inherit;
 
-  &__container{
+  &__container {
     display: flex;
   }
-  
-  ul{
+
+  ul {
     flex: 1 1 50%;
     list-style: none;
 
-    @include respond(phone){
+    @include respond(phone) {
       flex: 1 1 100%;
     }
   }
 }
 
+.po,
+.peo {
+  padding-bottom: 1rem;
 
-.po,.peo{
-  padding-bottom : 1rem;
-
-  ol{
+  ol {
     font-size: 1.5rem;
     padding-left: 2rem;
 
-    li{
-      &:not(:last-child){
-        margin-bottom: .5rem;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
       }
     }
-
   }
 }
 
-.links{
+.links {
   box-shadow: inset 0 2px 3px rgba($color-primary-light, 0.2);
   padding: 1rem;
 
-  ul{
+  ul {
     list-style: none;
     font-size: 1.5rem;
 
-
-    li{
+    li {
       display: inline-block;
       padding: 1rem 2rem;
       background-color: $color-primary-light;
-      transition: all .5s;
+      transition: all 0.5s;
       clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
 
-      margin : 1rem;
+      margin: 1rem;
 
-      &:hover{
-          background-color: $color-black;
+      &:hover {
+        background-color: $color-black;
       }
 
-      a{
+      a {
         text-decoration: none;
         color: $color-white;
         display: inline-block;
       }
-
     }
   }
 }
