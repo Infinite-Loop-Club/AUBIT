@@ -41,12 +41,12 @@
     border: 0 solid transparent;
     overflow: hidden;
     transform: scale(1);
-    transition: all .4s;
+    transition: all .6s;
   }
 
   &:hover &__figure {
     transform: scale(1);
-    border-width: 1rem;
+    border-width: 1.2rem;
     border-color: $color-primary-dark;
   }
 
@@ -61,8 +61,8 @@
   }
 
   &:hover &__image {
-    box-shadow: 0 0 0 1.4rem $color-white;
-    transform: scale(0.8);
+    box-shadow: 0 0 0 1.2rem $color-white;
+    transform: scale(0.87);
   }
 
   &__details {
