@@ -65,7 +65,7 @@ export default function Header(props) {
               </div> */}
             </li>
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Academic</a>
+              <p className={styles.nav__link} style={{ cursor: "pointer" }}>Academic</p>
               <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
                   <a href="#ab" className={styles.nav__dropdown_link}>
@@ -78,7 +78,7 @@ export default function Header(props) {
               </div >
             </li >
             <li className={styles.nav__item}>
-              <a href="#ab" className={styles.nav__link}>Features & Services</a>
+              <p className={styles.nav__link} style={{ cursor: "pointer" }}>Features & Services</p>
               <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
                   <a href="#ab" className={styles.nav__dropdown_link}>
