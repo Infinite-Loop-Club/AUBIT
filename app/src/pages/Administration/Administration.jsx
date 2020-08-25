@@ -5,6 +5,9 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Adminstration/Card";
 
+
+import Accordion from "../../components/Accordion/Accordion";
+
 import Table from "../../components/Table/Table";
 
 export default () => {
@@ -40,12 +43,14 @@ export default () => {
           name="Dr.T. Senthil Kumar"
           designation="Professor & Dean"
           image="./images/administration/dean.png"
-          inter="0000"
+          office="#ab"
           phn="0431-2407946"
           mail="kmtsenthil@gmail.com"
         />
         <div className={styles.tableContainer}>
-          <Table data={data} />
+          <Accordion title="Board of Governors :">
+            <Table data={data} />
+          </Accordion>
         </div>
       </main>
       <Footer />

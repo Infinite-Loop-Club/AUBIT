@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem;
 
   .heading_primary_main {
     font-size: 2.5rem;
@@ -45,12 +45,18 @@
 
   .inter {
     font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   &__phn,
-  &__mail {
+  &__mail,
+  &__office {
     display: flex;
     align-items: flex-end;
+    
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
 
     p,
     a {
@@ -58,7 +64,6 @@
       color: inherit;
       font-size: 1.5rem;
       margin-left: 1rem;
-
       &:hover {
         color: $color-primary-dark;
         cursor: pointer !important;
