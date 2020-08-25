@@ -5,6 +5,11 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Card from "../../components/Card/Adminstration/Card";
 
+
+import Accordion from "../../components/Accordion/Accordion";
+
+import Table from "../../components/Table/Table";
+
 export default () => {
   return (
     <Fragment>
@@ -38,12 +43,31 @@ export default () => {
           name="Dr.T. Senthil Kumar"
           designation="Professor & Dean"
           image="./images/administration/dean.png"
-          inter="0000"
+          office="#ab"
           phn="0431-2407946"
           mail="kmtsenthil@gmail.com"
         />
+        <div className={styles.tableContainer}>
+          <Accordion title="Board of Governors :">
+            <Table data={data} />
+          </Accordion>
+        </div>
       </main>
       <Footer />
     </Fragment>
   );
 };
+
+
+
+const data = {
+  header: ["Name", "Contact Address", "BoG", "Mail ID", "Contact No"],
+  values: [
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"],
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"],
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"],
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"],
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"],
+    [<p>Mr.R.Balasubramania<br /> Former Member,<br /> Tamilnadu Electricity Regulatory Commission,<br /> Chennai, & Chief Engineer,<br /> TNEB, Chennai</p>, <p>Former Member Secretary, TERC,<br />258 / 6, Swathi Appartments,<br />Opp.to Tirumangalam Police Station<br /> Chennai - 600 101.</p>, "Chairman", "seethalakshmib@hotmail.com", "9840055645"]
+  ]
+}

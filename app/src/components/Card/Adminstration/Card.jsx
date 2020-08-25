@@ -12,7 +12,11 @@ export default (props) => {
           <h3 className={styles.heading_primary_main}>{props.name}</h3>
           <p className={styles.designation}>{props.designation}</p>
         </div>
-        <p className={styles.inter}>Intercom : {props.inter}</p>
+        {!!props.inter && <p className={styles.inter}>Intercom : {props.inter}</p>}
+        {!!props.office && <div className={styles.details__office}>
+          <span className="icon-office" style={{ color: "#a61d22", marginBottom: ".5rem" }}></span>
+          <a href={props.office}>Office</a>
+        </div>}
         <div className={styles.details__phn}>
           <span className="icon-phone" style={{ color: "#a61d22" }}></span>
           <a href={`mailto:${props.phn}`}>{props.phn}</a>
