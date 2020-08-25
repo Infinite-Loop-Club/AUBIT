@@ -19,7 +19,7 @@ export default (props) => {
         </div>}
         <div className={styles.details__phn}>
           <span className="icon-phone" style={{ color: "#a61d22" }}></span>
-          <a href={`mailto:${props.phn}`}>{props.phn}</a>
+          <a href={`tel:${props.phn}`}>{props.phn}</a>
         </div>
         <div className={styles.details__mail}>
           <span className="icon-mail" style={{ color: "#a61d22" }}></span>
