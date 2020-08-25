@@ -41,7 +41,7 @@
     width: 17rem;
     height: 17rem;
     border-radius: 50rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     z-index: 10;
     border: 0 solid transparent;
     overflow: hidden;
@@ -73,7 +73,7 @@
   &__details {
     &_name {
       font-weight: 400;
-      font-weight: 2rem;
+      font-size: 2rem;
     }
 
     &_designation {

@@ -1,0 +1,12 @@
+@import "../../../styles/mediaQueryManager.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variable.scss";
+@import "../../../styles/utilities.scss";
+@import "../../../styles/base/typography.scss";
+
+.main {
+  @include setWidth;
+
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
