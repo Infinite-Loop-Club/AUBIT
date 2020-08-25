@@ -18,7 +18,6 @@ const Accordion = (props) => {
     setActive(!active);
   };
 
-
   return (
     <div className={styles.accordion_section} style={props.style}>
       <button className={styles.accordion_title} onClick={toggleActive}>

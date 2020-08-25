@@ -4,8 +4,8 @@
 .accordion_section {
   display: flex;
   flex-direction: column;
-  border-radius: 1rem !important;
-  box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
+  border-radius: .5rem;
+  box-shadow: 0 0 .8rem rgba($color-black, 0.4);
 }
 
 .accordion_title {
@@ -16,6 +16,7 @@
   border: none;
   outline: none;
   padding: 2rem 1rem;
+  border-radius: .5rem;
   transition: background-color 0.6s ease;
 }
 
@@ -33,6 +34,7 @@
 .accordion_content {
   background-color: $color-white;
   overflow: hidden;
+  border-radius: .5rem;
   transition: max-height 0.4s ease;
   padding: 0 1rem;
 }
