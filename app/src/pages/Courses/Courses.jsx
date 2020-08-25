@@ -9,12 +9,6 @@ export default function Courses() {
     <Fragment>
       <Header sticky />
       <main className={styles.main}>
-        <h4
-          className={styles.heading_primary_main}
-          style={{ textAlign: "center", marginBottom: "3rem" }}
-        >
-          Department of Automobile Engineering
-        </h4>
         <Table data={data} />
       </main>
       <Footer />
@@ -23,28 +17,9 @@ export default function Courses() {
 }
 
 const data = {
-  header: ["Name", "Contact Address", "BoG", "Mail ID", "Contact No"],
+  header: ["Department", "Course"],
   values: [
-    [
-      <p>
-        Mr.R.Balasubramania
-        <br /> Former Member,
-        <br /> Tamilnadu Electricity Regulatory Commission,
-        <br /> Chennai, & Chief Engineer,
-        <br /> TNEB, Chennai
-      </p>,
-      <p>
-        Former Member Secretary, TERC,
-        <br />
-        258 / 6, Swathi Appartments,
-        <br />
-        Opp.to Tirumangalam Police Station
-        <br /> Chennai - 600 101.
-      </p>,
-      "Chairman",
-      "seethalakshmib@hotmail.com",
-      "9840055645",
-    ],
+    ["Automobile", "B.E. Automobile Engineering"],
     [
       <p>
         Mr.R.Balasubramania
