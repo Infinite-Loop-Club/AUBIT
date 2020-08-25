@@ -7,6 +7,7 @@ import Department from "./pages/Department/Department";
 import Automobile from "./pages/IndividualDept/Department";
 import AutomobileStaff from "./pages/IndividualDept/Staff/Staff";
 import Test from "./Test";
+import Courses from './pages/Courses/Courses';
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" exact component={Home} />
         <Route path="/administration" exact component={Administration} />
         <Route path="/departments" exact component={Department} />
+        <Route path="/courses" exact component={Courses} />
         <Route path='/test' exact component={Test} />
 
         <Route path="/auto" exact component={Automobile} />
