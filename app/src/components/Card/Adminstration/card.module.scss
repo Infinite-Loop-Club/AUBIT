@@ -10,7 +10,7 @@
   max-width: 50rem;
   margin: 0 auto;
   border-radius: 1rem;
-  box-shadow: 1px 0.3rem 1.2rem rgba($color-black, 0.4);
+  box-shadow: 0 0 .8rem rgba($color-black, 0.4);
 }
 
 .img {
@@ -53,8 +53,8 @@
   &__office {
     display: flex;
     align-items: flex-end;
-    
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 1rem;
     }
 
@@ -64,6 +64,7 @@
       color: inherit;
       font-size: 1.5rem;
       margin-left: 1rem;
+
       &:hover {
         color: $color-primary-dark;
         cursor: pointer !important;
