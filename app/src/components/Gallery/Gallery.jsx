@@ -21,7 +21,7 @@ export default function Gallery() {
       }
       )
     }, 2000);
-
+    // eslint-disable-next-line
   }, [])
 
   const previousSlide = () => {
