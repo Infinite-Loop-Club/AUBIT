@@ -67,21 +67,21 @@
 
     li {
       display: inline-block;
-      padding: 1rem 2rem;
-      background-color: $color-primary-light;
-      transition: all 0.5s;
-      clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-
       margin: 1rem;
-
-      &:hover {
-        background-color: $color-black;
-      }
 
       a {
         text-decoration: none;
         color: $color-white;
         display: inline-block;
+        padding: 1rem 2rem;
+        background-color: $color-primary-light;
+        transition: all 0.5s;
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+
+        &:hover {
+          background-color: $color-black;
+        }
+
       }
     }
   }

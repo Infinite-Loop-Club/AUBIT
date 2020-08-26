@@ -20,8 +20,8 @@ export default function App() {
         <Route path="/courses" exact component={Courses} />
         <Route path='/test' exact component={Test} />
 
-        <Route path="/auto" exact component={Automobile} />
-        <Route path="/staff" exact component={AutomobileStaff} />
+        <Route path="/department/automobile" exact component={Automobile} />
+        <Route path="/department/automobile/staff" exact component={AutomobileStaff} />
       </Switch>
     </Router>
   );

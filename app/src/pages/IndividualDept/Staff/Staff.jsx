@@ -21,7 +21,7 @@ export default () => {
         </h4>
 
         <StaffCard
-          image='./images/administration/dean.png'
+          image='/images/administration/dean.png'
           name='Dr.T. Senthilkumar'
           designation='Professor & Dean'
           resume='#test'
@@ -31,7 +31,7 @@ export default () => {
         <div className="row">
           <div className="col-1-of-4">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -40,7 +40,7 @@ export default () => {
           </div>
           <div className="col-1-of-4">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -49,7 +49,7 @@ export default () => {
           </div>
           <div className="col-1-of-4">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -58,7 +58,7 @@ export default () => {
           </div>
           <div className="col-1-of-4">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -70,7 +70,7 @@ export default () => {
         <div className="row">
           <div className="col-1-of-2">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -79,7 +79,7 @@ export default () => {
           </div>
           <div className="col-1-of-2">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -88,7 +88,7 @@ export default () => {
           </div>
           <div className="col-1-of-2">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'
@@ -97,7 +97,7 @@ export default () => {
           </div>
           <div className="col-1-of-2">
             <StaffCard
-              image='./images/administration/vc.png'
+              image='/images/administration/vc.png'
               name='Sandy'
               designation='Sandy pola varuma'
               resume='#test'

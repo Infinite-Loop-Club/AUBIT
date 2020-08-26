@@ -179,7 +179,7 @@ export default () => {
           </p>
           <ul>
             <li>
-              <a href="#ab">Faculty</a>
+              <a href="/department/automobile/staff">Faculty</a>
             </li>
             <li>
               <a href="#ab">Lab Facility</a>

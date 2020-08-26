@@ -37,7 +37,7 @@ export default function Header(props) {
         {/* <nav className={(sticky || props.sticky) ? cx(styles.nav, styles.sticky) : styles.nav}> */}
         <div className={styles.nav_container} style={props.sticky ? { padding: "1.5rem 0" } : {}}>
           <div className={styles.nav__brand}>
-            <img src="images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
+            <img src="/images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
           </div>
 
