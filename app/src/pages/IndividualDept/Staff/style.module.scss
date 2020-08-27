@@ -9,4 +9,14 @@
 
   margin-top: 10rem;
   margin-bottom: 3rem;
+
+  .flexContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &>.flexItem {
+      flex: 1 1 25%;
+    }
+  }
 }

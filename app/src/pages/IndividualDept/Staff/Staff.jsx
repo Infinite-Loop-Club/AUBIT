@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
 
-
 import StaffCard from "../../../components/Card/Staff/StaffCard";
 
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
-
 
 export default () => {
   return (
@@ -28,8 +26,8 @@ export default () => {
           mail='santhoshvelr@gmail.com'
         />
 
-        <div className="row">
-          <div className="col-1-of-4">
+        <div className={styles.flexContainer}>
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -38,7 +36,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-4">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -47,7 +45,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-4">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -56,7 +54,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-4">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -65,10 +63,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-        </div>
-
-        <div className="row">
-          <div className="col-1-of-2">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -77,7 +72,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-2">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -86,7 +81,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-2">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -95,7 +90,7 @@ export default () => {
               mail='santhoshvelr@gmail.com'
             />
           </div>
-          <div className="col-1-of-2">
+          <div className={styles.flexItem}>
             <StaffCard
               image='/images/administration/vc.png'
               name='Sandy'
@@ -111,5 +106,3 @@ export default () => {
     </Fragment>
   );
 };
-
-
