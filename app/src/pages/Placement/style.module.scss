@@ -6,6 +6,91 @@
 
 
 .main {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
+  margin-top: 10rem !important;
+  margin-bottom: 3rem !important;;
+
+  @include setWidth;
+
+}
+
+.container,.co_ordinator{
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  padding : $base-padding;
+}
+
+.co_ordinator{
+  margin: 3rem 0;
+
+  .details{
+    margin-left: 2rem;
+  }
+
+
+
+  hr{
+    border: none;
+    border-top: .5rem dotted $color-primary-light;
+    width: 10%;
+    margin: 1rem auto;
+  }
+
+}
+
+.procedure{
+  padding-bottom: 2rem;
+
+  ol {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+
+    ul{
+      padding-left: 4rem;
+      margin: 1rem 0;
+    }
+
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact{
+
+  display: flex;
+
+  @include respond(micro) {
+      flex-direction: column;
+  }
+
+
+  p{
+    font-size: 1.5rem;
+  }
+  
+  .phn,.mail{
+    display: flex;
+    align-items: center;
+
+    flex-basis: 50%;
+
+
+    span{
+      color: $color-primary-dark;
+      margin-right: 1rem;
+    }
+
+  }
+
+  .mail{
+
+    @include respond(micro) {
+      margin-top: 1rem;
+   }
+    
+  }
+
 }

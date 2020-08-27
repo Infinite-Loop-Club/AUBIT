@@ -23,6 +23,14 @@ $font-family-default: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 
+// Shadow and other stuff
+
+$base-box-shadow : 1px 0.3rem 1.2rem rgba($color-black, 0.4);
+$base-border-radius : 1rem;
+$base-padding : 1.5rem;
+
+
+
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;

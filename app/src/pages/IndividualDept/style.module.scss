@@ -13,9 +13,9 @@
 
 .vmContainer,
 .courses {
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 1px 0.3rem 1.2rem rgba($color-black, 0.4);
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
   margin-bottom: 3rem;
 }
 
