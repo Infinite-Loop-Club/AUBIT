@@ -171,18 +171,15 @@ export default () => {
         </Accordion>
 
         <div className={styles.links}>
-          <p
+          {/* <p
             className={styles.heading_primary_main}
             style={{ textAlign: "center", marginBottom: "3rem" }}
           >
             Quick Links
-          </p>
+          </p> */}
           <ul>
             <li>
               <a href="/department/automobile/staff">Faculty</a>
-            </li>
-            <li>
-              <a href="#ab">Lab Facility</a>
             </li>
             <li>
               <a href="#ab">Alumini</a>
@@ -203,7 +200,7 @@ export default () => {
               <a href="#ab">Gallery</a>
             </li>
             <li>
-              <a href="#ab">Blog</a>
+              <a href="#ab"><span className="icon-paperclip" style={{ marginRight: ".5rem" }}></span>Lab Facility</a>
             </li>
           </ul>
         </div>
