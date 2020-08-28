@@ -10,3 +10,25 @@
   margin-top: 10rem;
   margin-bottom: 3rem;
 }
+
+.btn__container{
+  border-bottom: 2px solid $color-primary-light;
+
+
+  .btn1,.btn2{
+    border: none;
+    outline: none;
+    padding: 2rem;
+    border-bottom: 2px solid $color-primary-light;
+    margin-bottom: -2px;
+    background-color: $color-white;
+    transition: all .2s;
+  }
+
+  .active{
+    border : 2px solid $color-primary-light;
+    border-bottom : 2px solid $color-white;
+    // margin-bottom: -2px;
+  }
+
+}
