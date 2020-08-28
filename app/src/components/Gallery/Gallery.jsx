@@ -3,6 +3,9 @@ import styles from "./Gallery.module.scss";
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
+
+  const [counter, SetCounter] = React.useState(null);
+
   const slides = [
     "images/slide-1.png",
     "images/slide-2.png",
@@ -11,8 +14,8 @@ export default function Gallery() {
     "images/slide-5.png"
   ];
 
-  useEffect(() => {
-    setInterval(() => {
+  function handleStart() {
+    SetCounter(setInterval(() => {
       setIndex(old => {
         old = old + 1;
         old = old % slides.length;
@@ -20,17 +23,30 @@ export default function Gallery() {
         return old;
       }
       )
-    }, 2000);
+    }, 3000));
+  }
+
+  function handleStop() {
+    SetCounter(clearInterval(counter));
+    if (!!counter) {
+      setTimeout(handleStart, 3000);
+    }
+  }
+
+  useEffect(() => {
+    handleStart();
     // eslint-disable-next-line
-  }, [])
+  }, []);
 
   const previousSlide = () => {
+    handleStop();
     if (index <= 0) {
       setIndex(slides.length - 1);
     } else setIndex(index - 1);
   };
 
   const nextSlide = () => {
+    handleStop();
     if (index === slides.length - 3) setIndex(0);
     else setIndex(index + 1);
   };
@@ -46,6 +62,7 @@ export default function Gallery() {
             className={styles.galleryImage}
             src={slides[index]}
             alt="slide"
+            style={{ filter: 'brightness(50%)' }}
           />
           <img
             className={styles.galleryImage}
@@ -56,6 +73,7 @@ export default function Gallery() {
             className={styles.galleryImage}
             src={slides[(index + 2) % slides.length]}
             alt={slides[(index + 2) % slides.length]}
+            style={{ filter: 'brightness(50%)' }}
           />
         </div>
         <button className={styles.btn} onClick={nextSlide}>
