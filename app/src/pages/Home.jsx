@@ -140,7 +140,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className={cx(styles.mission, styles.feature_col)} data-aos="fade-left" data-aos-delay="50">
+        <div className={cx(styles.mission, styles.feature_col)} data-aos="fade-up-right" data-aos-delay="50">
           <h4 className={styles.mission__heading}>Mission:</h4>
           <ul className={styles.mission__list}>
             <li className={styles.mission__items}>
