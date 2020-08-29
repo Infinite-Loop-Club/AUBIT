@@ -126,13 +126,13 @@ export default function Home() {
                 To transform students into competent professional and responsible
                 citizens by focusing on assimilation, analysis, synthesis and
                 dissemination of knowledge to meet the societal needs.
-          </p>
+              </p>
             </div>
 
             <div className={styles.nba} data-aos="fade-up-right" data-aos-delay="50">
               <h4 className={styles.nba__heading}>
                 Approved by AICTE, NBA Accredited Departments:
-          </h4>
+              </h4>
               <ul className={styles.nba__list}>
                 <li className={styles.nba__item}>Department of XYZ</li>
                 <li className={styles.nba__item}>Department of ABC</li>
