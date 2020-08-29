@@ -6,6 +6,16 @@
 
 
 .main {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
+  margin-top: 10rem !important;
+  margin-bottom: 3rem !important;
+
+  @include setWidth;
+
+}
+
+
+.container{
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  padding : $base-padding;
 }
