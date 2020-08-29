@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/placement" exact component={Placement} />
         <Route path="/library" exact component={Library} />
         <Route path="/hostel" exact component={Hostel} />
-        <Route path="/studentAffairs" exact component={StudentAffairs} />
+        <Route path="/studentaffairs" exact component={StudentAffairs} />
 
         <Route path='/test' exact component={Test} />
 
