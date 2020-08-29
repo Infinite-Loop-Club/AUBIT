@@ -33,6 +33,7 @@ const settings = {
   loop: true,
   items: 1,
   gutter: 10,
+  autoplay: true, autoplayButtonOutput: false,
   fixedWidth: 250,
   responsive: {
     420: {
@@ -47,7 +48,8 @@ const settings = {
 
 const options = {
   autoWidth: false,
-  center: false
+  center: false,
+  autoPlay: true,
 }
 
 const imgStyles = {
