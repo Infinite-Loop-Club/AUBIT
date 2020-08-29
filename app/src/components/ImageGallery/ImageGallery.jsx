@@ -1,46 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './ImageGallery.module.scss';
 
-function GalleryItem({ source, name }) {
-  return (
-    <a href='#popup' className={classes.gallery__item}>
-      <img className={classes.gallery__image} src={source} alt={name} />
-    </a>
-  );
-}
+import Viewer from 'react-viewer';
+
+const sources = [{
+  src: './images/slide-1.png',
+  alt: 'slide-1'
+}, {
+  src: './images/slide-2.png',
+  alt: 'slide-2'
+}, {
+  src: './images/slide-3.png',
+  alt: 'slide-3'
+}, {
+  src: './images/slide-4.png',
+  alt: 'slide-4'
+}, {
+  src: './images/slide-1.png',
+  alt: 'slide-1'
+}, {
+  src: './images/slide-2.png',
+  alt: 'slide-2'
+}, {
+  src: './images/slide-3.png',
+  alt: 'slide-3'
+}, {
+  src: './images/slide-4.png',
+  alt: 'slide-4'
+},
+]
 
 export default function ImageGallery() {
-  const sources = [{
-    source: './images/slide-1.png',
-    name: 'slide-1'
-  }, {
-    source: './images/slide-2.png',
-    name: 'slide-2'
-  }, {
-    source: './images/slide-3.png',
-    name: 'slide-3'
-  }, {
-    source: './images/slide-4.png',
-    name: 'slide-4'
-  }, {
-    source: './images/slide-1.png',
-    name: 'slide-1'
-  }, {
-    source: './images/slide-2.png',
-    name: 'slide-2'
-  }, {
-    source: './images/slide-3.png',
-    name: 'slide-3'
-  }, {
-    source: './images/slide-4.png',
-    name: 'slide-4'
-  },
-  ]
+  const [isVisible, setVisible] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  function GalleryItem({ src, alt, index }) {
+    return (
+      <a onClick={() => { setVisible(true); setActiveIndex(index); }} href='#popup' className={classes.gallery__item}>
+        <img className={classes.gallery__image} src={src} alt={alt} />
+      </a>
+    );
+  }
+
+  console.log(sources);
   return (
-    <div className={classes.gallery__container}>
-      {
-        sources.map(({ source, name }) => <GalleryItem source={source} name={name} />)
-      }
-    </div>
+    <>
+      <div className={classes.gallery__container}>
+        {
+          sources.map((source, index) => <GalleryItem src={source.src} alt={source.alt} index={index} />)
+        }
+      </div>
+      <Viewer
+        visible={isVisible}
+        onClose={() => {
+          setVisible(false);
+        }}
+        images={sources}
+        activeIndex={activeIndex}
+        downloadable
+      />
+    </>
   )
 }

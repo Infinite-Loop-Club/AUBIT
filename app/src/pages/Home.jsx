@@ -19,10 +19,10 @@ export default function Home() {
               <div className={styles.hero__title}>
                 <h1 className={cx(styles.hero__heading, styles.heading_primary_main)}>
                   University College of Engineering
-            </h1>
+                </h1>
                 <h2 className={cx(styles.hero__sub_heading, styles.heading_primary_small)}>
                   Bharathidasan Institute of Technology
-            </h2>
+                </h2>
                 <p className={styles.description}>Anna University, Tiruchirappalli</p>
               </div>
             </div>
