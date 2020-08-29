@@ -1,8 +1,6 @@
 import React from "react";
-import ImageGallery from "./components/ImageGallery/ImageGallery";
+import Gallery from "./components/Gallery";
 
-export default () => (
-  <div style={{ display: "grid", height: '100vh', width: '90%', margin: 'auto', placeItems: 'center' }}>
-    <ImageGallery />
-  </div>
-);
+export default function Test() {
+  return <Gallery />
+}
