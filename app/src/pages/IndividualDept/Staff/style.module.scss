@@ -17,6 +17,11 @@
 
     &>.flexItem {
       flex: 1 1 25%;
+
+      @include respond(tiny) {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }
