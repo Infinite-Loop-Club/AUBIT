@@ -33,13 +33,14 @@ const settings = {
   loop: true,
   items: 1,
   gutter: 10,
-  autoplay: true, autoplayButtonOutput: false,
-  fixedWidth: 250,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  container: "#responsive",
   responsive: {
-    420: {
+    "600": {
       items: 2,
     },
-    600: {
+    "1000": {
       items: 3
     }
   },
