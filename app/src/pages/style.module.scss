@@ -105,6 +105,10 @@
     box-shadow: .5rem .5rem 2rem rgba($color-black, .2);
   }
 
+  span{
+    color: $color-primary-dark;
+  }
+
   &__list {
     list-style: none;
     margin-block-start: 0;
@@ -145,6 +149,7 @@
     &_text {
       padding: .3rem;
       font-size: 1.4rem;
+      color: $color-black !important;
     }
   }
 }
