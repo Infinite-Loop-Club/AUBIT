@@ -6,6 +6,56 @@
 
 
 .main {
-  margin-top: 10rem;
-  margin-bottom: 3rem;
+  margin-top: 10rem !important;
+  margin-bottom: 3rem !important;;
+
+  @include setWidth;
+
+}
+
+.full_container{
+  @include setWidth;
+}
+
+.container{
+  box-shadow: $base-box-shadow;
+  border-radius: $base-border-radius;
+  padding : $base-padding;
+  margin-top: 2rem;
+
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('/images/library.jpg');
+  background-size: cover;
+  background-position: right;
+  color: white;
+}
+
+.vmContainer {
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  margin: 3rem 0;
+
+  ul{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+
+    li{
+      &:not(:last-child){
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+
+}
+
+.vision {
+  margin-bottom: 2rem;
+}
+
+.tt{
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
 }
