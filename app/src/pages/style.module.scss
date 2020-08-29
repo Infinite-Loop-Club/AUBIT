@@ -8,8 +8,9 @@
 
 
 // ----------------------------------- Home -------------------------
-
-
+.homepage {
+  overflow: hidden;
+}
 
 .hero {
   min-height: 100vh;
@@ -21,7 +22,6 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow-x: hidden;
 
   &_container {
     @include setWidth;
