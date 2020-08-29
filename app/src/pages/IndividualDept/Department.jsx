@@ -182,10 +182,7 @@ export default () => {
               <a href="/department/automobile/staff">Faculty</a>
             </li>
             <li>
-              <a href="#ab">Alumini</a>
-            </li>
-            <li>
-              <a href="#ab">Placement</a>
+              <a href="#ab">Alumini & Placement</a>
             </li>
             <li>
               <a href="#ab">Sponer Projects</a>
@@ -197,10 +194,10 @@ export default () => {
               <a href="#ab">Book Published</a>
             </li>
             <li>
-              <a href="#ab">Gallery</a>
+              <a href="/department/automobile/gallery">Gallery</a>
             </li>
             <li>
-              <a href="#ab"><span className="icon-paperclip" style={{ marginRight: ".5rem" }}></span>Lab Facility</a>
+              <a href="http://www.aubit.edu.in/departments/AutomobileEngineering/pdf/automobile%20lab%20details.pdf"><span className="icon-paperclip" style={{ marginRight: ".5rem" }}></span>Lab Facility</a>
             </li>
           </ul>
         </div>

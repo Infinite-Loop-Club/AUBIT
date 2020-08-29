@@ -13,6 +13,7 @@ import StudentAffairs from "./pages/StudentAffairs/StudentAffairs";
 import Test from "./Test";
 import Automobile from "./pages/IndividualDept/Department";
 import AutomobileStaff from "./pages/IndividualDept/Staff/Staff";
+import AutomobileGallery from "./pages/IndividualDept/Gallery/Gallery";
 
 
 
@@ -33,6 +34,7 @@ export default function App() {
 
         <Route path="/department/automobile" exact component={Automobile} />
         <Route path="/department/automobile/staff" exact component={AutomobileStaff} />
+        <Route path="/department/automobile/gallery" exact component={AutomobileGallery} />
       </Switch>
     </Router>
   );
