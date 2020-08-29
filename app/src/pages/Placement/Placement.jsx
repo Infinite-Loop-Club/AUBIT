@@ -96,6 +96,15 @@ export default () => {
             </ol>
           </div>
         </Accordion>
+
+        <div className={styles.bottom_links}>
+          <ul>
+            <li><a href="#ab">Placement Statistics</a></li>
+            <li><a href="#ab">Visited Company</a></li>
+            <li><a href="#ab">Gallery</a></li>
+          </ul>
+        </div>
+
       </main>
       <Footer />
     </Fragment>
