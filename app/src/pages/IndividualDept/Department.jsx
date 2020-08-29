@@ -170,7 +170,7 @@ export default () => {
           </div>
         </Accordion>
 
-        <div className={styles.links}>
+        <div className={styles.bottom_links}>
           {/* <p
             className={styles.heading_primary_main}
             style={{ textAlign: "center", marginBottom: "3rem" }}
