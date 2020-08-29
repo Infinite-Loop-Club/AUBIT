@@ -34,11 +34,12 @@ export default function ImageGallery() {
   const [isVisible, setVisible] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   function GalleryItem({ src, alt, index }) {
-    return (
-      <a onClick={() => { setVisible(true); setActiveIndex(index); }} href='#popup' className={classes.gallery__item}>
-        <img className={classes.gallery__image} src={src} alt={alt} />
-      </a>
-    );
+    return <img
+      className={classes.gallery__image}
+      src={src}
+      alt={alt}
+      onClick={() => { setVisible(true); setActiveIndex(index); }}
+    />
   }
 
   console.log(sources);
