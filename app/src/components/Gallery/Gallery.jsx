@@ -6,9 +6,7 @@ import classes from './Gallery.module.scss';
 
 export default function Gallery() {
   const sliderRef = useRef(null);
-
-  const onGoTo = dir => sliderRef.current.slider.goTo(dir);
-  console.log(onGoTo);
+  const onGoTo = direction => sliderRef.current.slider.goTo(direction);
 
   return (
     <div className={classes.gallery}>
@@ -29,7 +27,7 @@ export default function Gallery() {
           ))
         }
       </TinySlider>
-      <button className={classes.btn} onClick={() => onGoTo('next')}>
+      <button className={classes.btn} style={{ position: "absolute", right: 0, top: '50%', transform: 'translateY(-50%)' }} onClick={() => onGoTo('next')}>
         <span className='icon-chevron-right' />
       </button>
     </div>

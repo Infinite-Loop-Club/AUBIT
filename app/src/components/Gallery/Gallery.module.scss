@@ -1,6 +1,7 @@
 @import '../../styles/variable.scss';
 
 .gallery {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -47,6 +48,7 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    cursor: pointer;
 
     &>span {
       display: inline-block;

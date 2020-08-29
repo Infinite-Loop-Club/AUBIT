@@ -72,6 +72,8 @@
 
 .gallery {
   display: flex;
+  max-width: 60%;
+  overflow: hidden;
   flex: 1 1 60%;
   align-items: center;
   margin-right: 4rem;

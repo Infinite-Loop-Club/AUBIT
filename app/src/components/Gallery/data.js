@@ -33,6 +33,7 @@ const settings = {
   loop: true,
   items: 1,
   gutter: 10,
+  fixedWidth: 250,
   responsive: {
     420: {
       items: 2,
