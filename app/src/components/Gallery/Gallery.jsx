@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import TinySlider from "tiny-slider-react";
-import { sources, settings, imgStyles, options } from './data';
+import cx from "classnames";
 
+import { sources, settings } from './data';
 import classes from './Gallery.module.scss';
 
 export default function Gallery() {
@@ -10,25 +11,24 @@ export default function Gallery() {
 
   return (
     <div className={classes.gallery}>
-      <button className={classes.btn} onClick={() => onGoTo('prev')}>
+      <button className={classes.btn} style={{ left: 0 }} onClick={() => onGoTo('prev')}>
         <span style={{ transform: 'rotate(180deg)' }} className='icon-chevron-right' />
       </button>
-      <TinySlider settings={settings} ref={sliderRef} {...options}>
+      <TinySlider settings={settings} ref={sliderRef}>
         {
           sources.map((el, index) => (
             <div key={index} style={{ position: "relative" }}>
               <img
-                className={`tns-lazy-img`}
+                className={cx(`tns-lazy-img`, classes.galleryImage)}
                 data-src={el.src}
                 alt={el.alt}
-                style={imgStyles}
               />
             </div>
           ))
         }
       </TinySlider>
-      <button className={classes.btn} style={{ position: "absolute", right: 0, top: '50%', transform: 'translateY(-50%)' }} onClick={() => onGoTo('next')}>
-        <span className='icon-chevron-right' />
+      <button className={classes.btn} style={{ right: 0 }} onClick={() => onGoTo('next')}>
+        <span style={{ transform: 'translateX(.5rem)' }} className='icon-chevron-right' />
       </button>
     </div>
   );

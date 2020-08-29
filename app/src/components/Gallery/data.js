@@ -45,20 +45,4 @@ const settings = {
   },
   controls: false
 };
-
-const options = {
-  autoWidth: false,
-  center: false,
-  autoPlay: true,
-}
-
-const imgStyles = {
-  width: "100%",
-  height: "20rem",
-  objectFit: "cover",
-  borderRadius: '3px',
-  display: 'inline-block',
-  boxShadow: '1px 2px 1rem rgba(0,0,0, .5)'
-};
-
-export { sources, settings, imgStyles, options }
+export { sources, settings }
