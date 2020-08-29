@@ -1,4 +1,5 @@
 @import '../../../styles/variable.scss';
+@import '../../../styles/mediaQueryManager.scss';
 
 .card {
   border-radius: 2px;
@@ -34,6 +35,10 @@
     padding: 3rem 4rem 1rem 4rem;
     text-align: center;
     z-index: 10;
+
+    @include respond(phone) {
+      padding: 2rem 2.5rem 1rem 2.5rem;
+    }
   }
 
   &__figure {
@@ -47,6 +52,16 @@
     overflow: hidden;
     transform: scale(1);
     transition: all .6s;
+
+    @include respond(phone) {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    @include respond(micro) {
+      width: 13rem;
+      height: 13rem;
+    }
   }
 
   &:hover &__figure {
