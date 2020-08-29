@@ -129,6 +129,13 @@ export default () => {
             </ul>
           </div>
         </Accordion>
+
+        <div className={styles.bottom_links}>
+          <ul>
+            <li><a href="#ab">Staff</a></li>
+          </ul>
+        </div>
+
       </main>
       <Footer />
     </Fragment>
