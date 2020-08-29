@@ -99,16 +99,16 @@ export default function Header(props) {
               </p>
               <div className={styles.nav__dropdown}>
                 <ol className={styles.nav__dropdown_list}>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
+                  <a href="/hostel" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Hostel</li>
                   </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
+                  <a href="/library" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Library</li>
                   </a>
                   <a href="/placement" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Placement</li>
                   </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
+                  <a href="/studentAffairs" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>
                       Student Affairs
                     </li>
