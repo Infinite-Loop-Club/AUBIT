@@ -29,30 +29,28 @@ export default () => {
             experience by servicing and maintain an inclusive, welcoming, and
             safe campus community.
           </p>
-          <h5>The main objectives are:</h5>
-          <p className={styles.description} style={{ textIndent: "5rem" }}>
-            <ul>
-              <li>
-                Helps in receiving the receipt of approval orders related with
-                Readmission, Transfer (from DOTE) through Center of student
-                affairs, Chennai.
-              </li>
-              <li>
-                Helps in receiving the approval orders for name change of
-                students and break of study based on medical certificate from
-                Center of Student affairs ,Chennai.
-              </li>
-              <li>
-                To solve the discrepancy that arises at the time of payment of
-                semester fees to AUKDC, Chennai.
-              </li>
-              <li>
-                To issue all kinds of Bonafide certificates, Transfer
-                certificates and course completion certificates .
-              </li>
-              <li>To avail Scholarships for all categories</li>
-            </ul>
-          </p>
+          <h6 className={styles.heading_primary_main}>The main objectives are:</h6>
+          <ul>
+            <li>
+              Helps in receiving the receipt of approval orders related with
+              Readmission, Transfer (from DOTE) through Center of student
+              affairs, Chennai.
+            </li>
+            <li>
+              Helps in receiving the approval orders for name change of
+              students and break of study based on medical certificate from
+              Center of Student affairs ,Chennai.
+            </li>
+            <li>
+              To solve the discrepancy that arises at the time of payment of
+              semester fees to AUKDC, Chennai.
+            </li>
+            <li>
+              To issue all kinds of Bonafide certificates, Transfer
+              certificates and course completion certificates .
+            </li>
+            <li>To avail Scholarships for all categories</li>
+          </ul>
         </div>
 
         <div className={styles.co_ordinator}>
@@ -103,7 +101,7 @@ export default () => {
               student experience by servicing and maintain an inclusive,
               welcoming, and safe campus community.
             </p>
-            <p className={styles.description}>The main objectives are:</p>
+            <h6 className={styles.heading_primary_main}>The main objectives are:</h6>
             <ul>
               <li>
                 Admission Process of UG(B.E. &

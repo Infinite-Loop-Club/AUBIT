@@ -18,6 +18,20 @@
   padding: $base-padding;
 }
 
+.container{
+  ul {
+    padding-left: 4rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
 .co_ordinator {
   margin: 3rem 0;
 
@@ -39,9 +53,9 @@
   ul {
     padding-left: 4rem;
     margin: 1rem 0;
+    font-size: 1.5rem;
 
     li {
-      font-size: 1.5rem;
       &:not(:last-child) {
         margin-bottom: 0.5rem;
       }
