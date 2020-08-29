@@ -17,18 +17,19 @@
   outline: none;
   padding: 2rem 1rem;
   border-radius: .5rem;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.4s ease;
 }
 
 .accordion_icon {
   margin-left: auto;
   color: $color-primary-dark;
   font-size: 2rem;
-  transition: transform 0.5s ease;
+  transform: rotate(90deg);
+  transition: transform 0.4s ease;
 }
 
 .rotate {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .accordion_content {

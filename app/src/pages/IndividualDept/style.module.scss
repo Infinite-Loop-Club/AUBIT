@@ -73,15 +73,16 @@
         text-decoration: none;
         color: $color-white;
         display: inline-block;
-        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        padding: .5rem 2rem;
+        border-radius: 2rem;
         background-color: $color-primary-light;
         transition: all 0.5s;
-        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+        // clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
 
         &:hover {
           background-color: $color-black;
         }
-
       }
     }
   }
