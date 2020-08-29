@@ -3,50 +3,25 @@ import classes from './ImageGallery.module.scss';
 
 import Viewer from 'react-viewer';
 
-const sources = [{
-  src: './images/slide-1.png',
-  alt: 'slide-1'
-}, {
-  src: './images/slide-2.png',
-  alt: 'slide-2'
-}, {
-  src: './images/slide-3.png',
-  alt: 'slide-3'
-}, {
-  src: './images/slide-4.png',
-  alt: 'slide-4'
-}, {
-  src: './images/slide-1.png',
-  alt: 'slide-1'
-}, {
-  src: './images/slide-2.png',
-  alt: 'slide-2'
-}, {
-  src: './images/slide-3.png',
-  alt: 'slide-3'
-}, {
-  src: './images/slide-4.png',
-  alt: 'slide-4'
-},
-]
 
-export default function ImageGallery() {
+
+export default function ImageGallery(props) {
   const [isVisible, setVisible] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   function GalleryItem({ src, alt, index }) {
-    return (
-      <a onClick={() => { setVisible(true); setActiveIndex(index); }} href='#popup' className={classes.gallery__item}>
-        <img className={classes.gallery__image} src={src} alt={alt} />
-      </a>
-    );
+    return <img
+      className={classes.gallery__image}
+      src={src}
+      alt={alt}
+      onClick={() => { setVisible(true); setActiveIndex(index); }}
+    />
   }
 
-  console.log(sources);
   return (
     <>
       <div className={classes.gallery__container}>
         {
-          sources.map((source, index) => <GalleryItem src={source.src} alt={source.alt} index={index} />)
+          props.sources.map((source, index) => <GalleryItem src={source.src} alt={!!source.alt ? `slide-${index}` : source.alt} index={index} />)
         }
       </div>
       <Viewer
@@ -54,7 +29,7 @@ export default function ImageGallery() {
         onClose={() => {
           setVisible(false);
         }}
-        images={sources}
+        images={props.sources}
         activeIndex={activeIndex}
         downloadable
       />

@@ -6,6 +6,18 @@ import StaffCard from "../../../components/Card/Staff/StaffCard";
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
 
+
+function Item(value, index) {
+  return <div key={index} className={styles.flexItem}>
+    <StaffCard
+      {...value}
+    />
+  </div>
+}
+
+
+
+
 export default () => {
   return (
     <Fragment>
@@ -18,6 +30,14 @@ export default () => {
           Department of Automobile Engineering
         </h4>
 
+
+        <h6
+          className={styles.heading_primary_main}
+          style={{ marginBottom: "3rem" }}
+        >
+          Head of the Department
+        </h6>
+
         <StaffCard
           image='/images/administration/dean.png'
           name='Dr.T. Senthilkumar'
@@ -26,79 +46,26 @@ export default () => {
           mail='santhoshvelr@gmail.com'
         />
 
+        <h6
+          className={styles.heading_primary_main}
+          style={{ margin: "3rem 0" }}
+        >
+          Teaching Staff
+        </h6>
+
         <div className={styles.flexContainer}>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
-          <div className={styles.flexItem}>
-            <StaffCard
-              image='/images/administration/vc.png'
-              name='Sandy'
-              designation='Sandy pola varuma'
-              resume='#test'
-              mail='santhoshvelr@gmail.com'
-            />
-          </div>
+          {data.map(Item)}
+        </div>
+
+        <h6
+          className={styles.heading_primary_main}
+          style={{ margin: "3rem 0" }}
+        >
+          Non - Teaching Staff
+        </h6>
+
+        <div className={styles.flexContainer}>
+          {data.map(Item)}
         </div>
 
       </main>
@@ -106,3 +73,36 @@ export default () => {
     </Fragment>
   );
 };
+
+
+
+const data = [
+  {
+    image: "/images/administration/vc.png",
+    name: "Name",
+    designation: "Designamtion",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com"
+  },
+  {
+    image: "/images/administration/vc.png",
+    name: "Name",
+    designation: "Designamtion",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com"
+  },
+  {
+    image: "/images/administration/vc.png",
+    name: "Name",
+    designation: "Designamtion",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com"
+  },
+  {
+    image: "/images/administration/vc.png",
+    name: "Name",
+    designation: "Designamtion",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com"
+  }
+]
