@@ -140,27 +140,27 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className={cx(styles.mission, styles.feature_col)}>
+        <div className={cx(styles.mission, styles.feature_col)} data-aos="fade-left" data-aos-delay="50">
           <h4 className={styles.mission__heading}>Mission:</h4>
           <ul className={styles.mission__list}>
             <li className={styles.mission__items}>
               Impart quality education to meet the needs of the profession and
               society.
-          </li>
+            </li>
             <li className={styles.mission__items}>
               Attract and develop talented and committed human resource and
               provide an environment conducive to innovation and research.
-          </li>
+            </li>
             <li className={styles.mission__items}>
               Facilitate effective interactions among faculty, students, premier
               educational institutions, R & D laboratories, industries,alumni
               and other stack-holders.
-          </li>
+            </li>
             <li className={styles.mission__items}>
               Practice and promote high standards of professional ethics,
               transparency and accountability and team spirit and
               entrepreneurial skills.
-          </li>
+            </li>
           </ul>
         </div>
       </section>

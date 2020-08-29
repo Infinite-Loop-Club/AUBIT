@@ -16,12 +16,12 @@
   display: flex;
   justify-content: flex-end;
 
-
   background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)),
     url('/images/hero.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow-x: hidden;
 
   &_container {
     @include setWidth;
@@ -172,12 +172,7 @@
 }
 
 
-
-
-
 // ----------------------------------- Flash -------------------------
-
-
 
 .flash {
   border-radius: .5rem;
@@ -240,7 +235,6 @@
     }
   }
 }
-
 
 .tab__trigger {
 
@@ -326,12 +320,6 @@
   height: 20rem;
   display: none;
 }
-
-
-
-
-
-
 
 
 
@@ -453,12 +441,6 @@
 
 
 
-
-
-
-
-
-
 // ----------------------------------- location -------------------------
 
 
@@ -476,8 +458,5 @@
     @include respond(phone) {
       height: 20rem;
     }
-
-
   }
-
 }

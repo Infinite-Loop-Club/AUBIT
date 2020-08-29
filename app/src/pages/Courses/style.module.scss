@@ -11,24 +11,26 @@
   margin-bottom: 3rem;
 }
 
-.btn__container{
+.btn__container {
   border-bottom: 2px solid $color-primary-light;
 
-
-  .btn1,.btn2{
+  .btn1,
+  .btn2 {
     border: none;
     outline: none;
     padding: 2rem;
-    border-bottom: 2px solid $color-primary-light;
+    font-family: $font-family-default;
+    font-size: 1.6rem;
     margin-bottom: -2px;
     background-color: $color-white;
+    border: 2px solid transparent;
+    border-bottom: 2px solid $color-primary-light;
+    cursor: pointer;
     transition: all .2s;
   }
 
-  .active{
-    border : 2px solid $color-primary-light;
-    border-bottom : 2px solid $color-white;
-    // margin-bottom: -2px;
+  .active {
+    border: 2px solid $color-primary-light;
+    border-bottom: 2px solid $color-white;
   }
-
 }
