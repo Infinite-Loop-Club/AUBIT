@@ -45,7 +45,7 @@ const links = [
   {
     name: "NIRF Engineering",
     link: "http://www.aubit.edu.in/pdf/UNIVERSITY%20COLLEGE%20OF%20ENGINEERING,%20BIT%20CAMPUS%20TIRUCHIRAPPALLI20200119-Engineering.pdf",
-    isNew: true
+    isNew: false
   },
   {
     name: "Student Feedback Form",
