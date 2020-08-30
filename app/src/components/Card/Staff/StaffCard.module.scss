@@ -1,20 +1,20 @@
-@import '../../../styles/variable.scss';
-@import '../../../styles/mediaQueryManager.scss';
+@import "../../../styles/variable.scss";
+@import "../../../styles/mediaQueryManager.scss";
 
 .card {
   border-radius: 2px;
-  box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   display: inline-block;
   overflow: hidden;
   position: relative;
-  transition: box-shadow .5s;
+  transition: box-shadow 0.5s;
 
   &:hover {
-    box-shadow: 0 .5rem 1rem rgba($color-black, .5);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     top: 0;
@@ -24,7 +24,7 @@
     border-radius: 50%;
     background-color: $color-primary-light;
     transform: translate(-50%, -100%);
-    transition: all .7s;
+    transition: all 0.7s;
   }
 
   &:hover::after {
@@ -51,7 +51,7 @@
     border: 0 solid transparent;
     overflow: hidden;
     transform: scale(1);
-    transition: all .6s;
+    transition: all 0.6s;
 
     @include respond(phone) {
       width: 15rem;
@@ -77,12 +77,12 @@
     display: block;
     object-fit: cover;
     object-position: top center;
-    transition: all 0.9s ease 0s;
+    transition: all 1s ease 0s;
   }
 
   &:hover &__image {
     box-shadow: 0 0 0 1.2rem $color-white;
-    transform: scale(0.87);
+    transform: scale(0.8);
   }
 
   &__details {
@@ -99,28 +99,28 @@
   &__cta {
     display: block;
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: $color-primary-light;
     color: $color-white;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(5.5rem);
-    transition: transform .5s;
+    transition: transform 0.5s;
   }
 
   &__link {
     text-decoration: none;
     color: inherit;
     padding: 1rem;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s;
+    transition: all 0.3s;
 
-    &>span {
+    & > span {
       display: block;
     }
 
