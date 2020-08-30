@@ -40,10 +40,10 @@ export default function Header(props) {
           className={styles.nav_container}
           style={props.sticky ? { padding: "1.5rem 0" } : {}}
         >
-          <div className={styles.nav__brand}>
+          <a className={styles.nav__brand} href="/" style={{ textDecoration: "none" }}>
             <img src="/images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
-          </div>
+          </a>
 
           <ul
             className={
