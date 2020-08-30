@@ -13,31 +13,31 @@ export default function Footer() {
             <ul className={styles.social__list}>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
-                  <span className="icon-mail" style={{ marginRight: "1rem" }}></span>
+                  <span className="icon-mail"></span>
                   <p className={styles.social__list_text}>annauniv@gmail.com</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href="https://www.facebook.com/Anna-University-BIT-Campus-Trichy-324036518102939/">
-                  <span className="icon-facebook" style={{ marginRight: "1rem" }}></span>
+                  <span className="icon-facebook"></span>
                   <p className={styles.social__list_text}>Anna University,Trichy</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href="https://twitter.com/aubittrichy">
-                  <span className="icon-twitter" style={{ marginRight: "1rem" }}></span>
+                  <span className="icon-twitter"></span>
                   <p className={styles.social__list_text}>@aubittrichy</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
-                  <span className="icon-linkedin" style={{ marginRight: "1rem" }}></span>
+                  <span className="icon-linkedin"></span>
                   <p className={styles.social__list_text}>aubit</p>
                 </a>
               </li>
               <li className={styles.social__list_item}>
                 <a href=" #ab">
-                  <span className="icon-youtube" style={{ marginRight: "1rem" }}></span>
+                  <span className="icon-youtube"></span>
                   <p className={styles.social__list_text}>aubit</p>
                 </a>
               </li>

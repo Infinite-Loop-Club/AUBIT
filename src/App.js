@@ -15,8 +15,6 @@ import Automobile from "./pages/IndividualDept/Department";
 import AutomobileStaff from "./pages/IndividualDept/Staff/Staff";
 import AutomobileGallery from "./pages/IndividualDept/Gallery/Gallery";
 
-
-
 export default function App() {
   return (
     <Router>
