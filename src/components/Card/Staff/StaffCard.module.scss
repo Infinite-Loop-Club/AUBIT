@@ -2,11 +2,12 @@
 @import "../../../styles/mediaQueryManager.scss";
 
 .card {
+  display: inline-block;
+  position: relative;
+  width: 20rem;
   border-radius: 2px;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  display: inline-block;
   overflow: hidden;
-  position: relative;
   transition: box-shadow 0.5s;
 
   &:hover {
@@ -32,20 +33,16 @@
   }
 
   &__frame {
-    padding: 3rem 4rem 1rem 4rem;
+    padding: 2rem 0 .5rem 0;
     text-align: center;
     z-index: 10;
-
-    @include respond(phone) {
-      padding: 2rem 2.5rem 1rem 2.5rem;
-    }
   }
 
   &__figure {
     display: inline-block;
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50rem;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
     margin-bottom: 1rem;
     z-index: 10;
     border: 0 solid transparent;
@@ -58,10 +55,10 @@
       height: 15rem;
     }
 
-    @include respond(micro) {
-      width: 13rem;
-      height: 13rem;
-    }
+    // @include respond(micro) {
+    //   width: 16rem;
+    //   height: 16rem;
+    // }
   }
 
   &:hover &__figure {
@@ -82,7 +79,7 @@
 
   &:hover &__image {
     box-shadow: 0 0 0 1.2rem $color-white;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 
   &__details {
@@ -120,7 +117,7 @@
     align-items: center;
     transition: all 0.3s;
 
-    & > span {
+    &>span {
       display: block;
     }
 
