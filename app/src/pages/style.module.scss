@@ -308,9 +308,14 @@
 
   &__list {
     list-style: none;
+    margin-left: 1rem;
 
     li {
       font-size: 1.5rem;
+
+      &:not(:last-child){
+        margin-bottom: .5rem;
+      }
     }
   }
 }

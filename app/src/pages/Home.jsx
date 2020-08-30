@@ -111,9 +111,9 @@ export default function Home() {
                 Approved by AICTE, NBA Accredited Departments:
               </h4>
               <ul className={styles.nba__list}>
-                <li className={styles.nba__item}>Department of XYZ</li>
-                <li className={styles.nba__item}>Department of ABC</li>
-                <li className={styles.nba__item}>Department of DEF</li>
+                <li className={styles.nba__item}>Department of Bio-Technology</li>
+                <li className={styles.nba__item}>Department of Petrochemical Technology</li>
+                <li className={styles.nba__item}>Department of Pharmaceutical Technology</li>
               </ul>
             </div>
           </div>
