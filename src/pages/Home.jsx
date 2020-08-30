@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 
 import styles from "./style.module.scss";
 import Gallery from "../components/Gallery";
-import Badge from "../components/Badge/Badge";
+import Flash from "../components/Flash";
 
 export default function Home() {
   return (
@@ -32,67 +32,7 @@ export default function Home() {
               <div className={styles.gallery}>
                 <Gallery />
               </div>
-
-              <div className={styles.flash}>
-                <div className={styles.tab__trigger}>
-                  <ul>
-                    <li><label htmlFor="tab1">News</label></li>
-                    <li><label htmlFor="tab2">Events</label></li>
-                    <li><label htmlFor="tab3">Links</label></li>
-                  </ul>
-                </div>
-                <div className={styles.tab__container_top}>
-                  <input type="radio" defaultChecked id="tab1" name="1" />
-                  <div className={styles.tab__content}>
-                    <ol className={styles.flash__list} style={{ animationDuration: `${news.length + 4}s` }}>
-                      {
-                        news.map((value, key) => {
-                          return <a key={key} href={value.link} className={styles.flash__link}>
-                            <li className={styles.flash__item}>
-                              <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                              <span className={styles.flash__item_text}>{value.name}
-                                <Badge>new</Badge></span>
-                            </li>
-                          </a>
-                        })
-                      }
-                    </ol>
-                  </div>
-
-                  <input type="radio" id="tab2" name="1" />
-                  <div className={styles.tab__content}>
-                    <ol className={styles.flash__list} style={{ animationDuration: `${event.length + 4}s` }}>
-                      {
-                        event.map((value, key) => {
-                          return <a key={key} href={value.link} className={styles.flash__link}>
-                            <li className={styles.flash__item}>
-                              <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
-                              <span className={styles.flash__item_text}>{value.name}</span>
-                            </li>
-                          </a>
-                        })
-                      }
-                    </ol>
-                  </div>
-
-                  <input type="radio" id="tab3" name="1" />
-                  <div className={styles.tab__content}>
-                    <ol className={styles.flash__list} style={{ animationDuration: `${links.length + 4}s` }}>
-                      {
-                        links.map((value, key) => {
-                          return <a key={key} href={value.link} className={styles.flash__link}>
-                            <li className={styles.flash__item}>
-                              <span className="icon-link" style={{ marginRight: "1rem" }}></span>
-                              <span className={styles.flash__item_text}>{value.name}</span>
-                            </li>
-                          </a>
-                        })
-                      }
-                    </ol>
-
-                  </div>
-                </div>
-              </div>
+              <Flash />
             </div>
           </div>
         </section>
@@ -154,62 +94,3 @@ export default function Home() {
     </Fragment>
   );
 }
-
-
-
-const news = [
-  {
-    name: "Recruitment Notification: EDII-Anna Business Incubation Research Foundation, UCE, BIT Campus, Tiruchirappalli 620 024 ",
-    link: "http://www.aubit.edu.in/pdf/EDII%20ABIRF%20Recuritment%20Notification.pdf",
-    new: true
-  },
-  {
-    name: "  Congratulation to our Alumnus Mr. M.Muruganantham for scoring All India Ranking -119 in UPSC 2019",
-    link: "http://www.aubit.edu.in/pdf/news/muruganatham.pdf",
-    new: true
-  }
-];
-
-
-const event = [
-  {
-    name: "Online One Week Faculty Development Programme on Remote Sensing and GIS Applications in Sustainable Environmental Management (10.08.2020 to 14.08.20204",
-    link: "http://www.aubit.edu.in/pdf/civil/poster.pdf",
-    new: true
-  },
-  {
-    name: "Two week Online Faculty Development Programme on Python program (september 07 - 08 th 2020)",
-    link: "http://www.aubit.edu.in/pdf/Python%20Programming.pdf",
-    new: true
-  },
-  {
-    name: "Academic Schedule for Aug 2020 -Nov 2020(ODD Semester)",
-    link: "http://www.aubit.edu.in/pdf/news/Circular%20-%20Copy.pdf",
-    new: true
-  },
-  {
-    name: "National Social Awareness Programme on Blood Donation Importance During Covid'19",
-    link: "http://www.aubit.edu.in/pdf/eee/nsa.jpg",
-    new: true
-  }
-];
-
-
-
-const links = [
-  {
-    name: "NIFR Overall",
-    link: "http://www.aubit.edu.in/pdf/UNIVERSITY%20COLLEGE%20OF%20ENGINEERING,%20BIT%20CAMPUS%20TIRUCHIRAPPALLI20200119-%20Overall.pdf",
-    new: true
-  },
-  {
-    name: "NIRF Engineering",
-    link: "http://www.aubit.edu.in/pdf/UNIVERSITY%20COLLEGE%20OF%20ENGINEERING,%20BIT%20CAMPUS%20TIRUCHIRAPPALLI20200119-Engineering.pdf",
-    new: true
-  },
-  {
-    name: "Student Feedback Form",
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdbl51YuIYFMbqOi_8W0RKfhYKEE-CMnrB_9NkOrjZb5i4quA/viewform',
-    new: true
-  }
-];
