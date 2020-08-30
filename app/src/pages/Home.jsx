@@ -43,74 +43,51 @@ export default function Home() {
                 <div className={styles.tab__container_top}>
                   <input type="radio" defaultChecked id="tab1" name="1" />
                   <div className={styles.tab__content}>
-                    <ol className={styles.flash__list}>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>Upcoming event</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>New announcement</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>New announcement</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>Upcoming event</span>
-                        </li>
-                      </a>
+                    <ol className={styles.flash__list} style={{ animationDuration: `${news.length + 2}s` }}>
+                      {
+                        news.map((value, key) => {
+                          return <a key={key} href={value.link} className={styles.flash__link}>
+                            <li className={styles.flash__item}>
+                              <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
+                              <span className={styles.flash__item_text}>{value.data}</span>
+                            </li>
+                          </a>
+                        })
+                      }
                     </ol>
                   </div>
 
                   <input type="radio" id="tab2" name="1" />
                   <div className={styles.tab__content}>
-                    <ol className={styles.flash__list}>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>New announcement</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>Upcoming event</span>
-                        </li>
-                      </a>
+                    <ol className={styles.flash__list} style={{ animationDuration: `${event.length + 2}s` }}>
+                      {
+                        event.map((value, key) => {
+                          return <a key={key} href={value.link} className={styles.flash__link}>
+                            <li className={styles.flash__item}>
+                              <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
+                              <span className={styles.flash__item_text}>{value.data}</span>
+                            </li>
+                          </a>
+                        })
+                      }
                     </ol>
                   </div>
 
                   <input type="radio" id="tab3" name="1" />
                   <div className={styles.tab__content}>
-                    <ol className={styles.flash__list}>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-link" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>Upcoming event</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-link" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>New announcement</span>
-                        </li>
-                      </a>
-                      <a href="#ab" className={styles.flash__link}>
-                        <li className={styles.flash__item}>
-                          <span className="icon-link" style={{ marginRight: "1rem" }}></span>
-                          <span className={styles.flash__item_text}>New announcement</span>
-                        </li>
-                      </a>
+                    <ol className={styles.flash__list} style={{ animationDuration: `${links.length + 2}s` }}>
+                      {
+                        links.map((value, key) => {
+                          return <a key={key} href={value.link} className={styles.flash__link}>
+                            <li className={styles.flash__item}>
+                              <span className="icon-link" style={{ marginRight: "1rem" }}></span>
+                              <span className={styles.flash__item_text}>{value.data}</span>
+                            </li>
+                          </a>
+                        })
+                      }
                     </ol>
+
                   </div>
                 </div>
               </div>
@@ -175,3 +152,97 @@ export default function Home() {
     </Fragment>
   );
 }
+
+
+
+const news = [
+  {
+    data: "New announcement1",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement2",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement3",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement4",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement5",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement6",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement7",
+    link: "#ab",
+    new: true
+  }
+];
+
+
+const event = [
+  {
+    data: "New announcement1",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement2",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement3",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement4",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement5",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement6",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement7",
+    link: "#ab",
+    new: true
+  }
+];
+
+
+
+const links = [
+  {
+    data: "New announcement1",
+    link: "#ab",
+    new: true
+  },
+  {
+    data: "New announcement2",
+    link: "#ab",
+    new: true
+  }
+];
