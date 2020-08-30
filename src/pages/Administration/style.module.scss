@@ -7,15 +7,11 @@
 
 
 .main {
+  @include setWidth;
   margin-top: 10rem;
   margin-bottom: 3rem;
-  
-  & > * {
+
+  &>* {
     margin-top: 3rem !important;
   }
-
-}
-
-.tableContainer{
-  @include setWidth;
 }
