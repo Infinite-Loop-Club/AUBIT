@@ -22,9 +22,14 @@ export default function Flash() {
               news.map((value, key) => {
                 return <a key={key} href={value.link} className={classes.flash__link}>
                   <li className={classes.flash__item}>
-                    <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
+                    <div className={classes.flash__item_icons}>
+                      <span className="icon-globe"></span>
+                      {
+                        value.isNew && <Badge>NEW</Badge>
+                      }
+                    </div>
                     <span className={classes.flash__item_text}>{value.name}
-                      <Badge>new</Badge></span>
+                    </span>
                   </li>
                 </a>
               })

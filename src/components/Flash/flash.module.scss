@@ -58,11 +58,12 @@
     display: flex;
     align-items: stretch;
 
-    &_icon {
-      height: 2rem;
-      width: 2rem;
+    &_icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
       margin-right: 1rem;
-      fill: $color-primary-light;
     }
 
     &_text {
