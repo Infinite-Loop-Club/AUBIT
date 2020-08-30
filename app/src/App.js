@@ -23,7 +23,7 @@ export default function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/administration" exact component={Administration} />
-        <Route path="/departments" exact component={Department} />
+        <Route path="/department" exact component={Department} />
         <Route path="/courses" exact component={Courses} />
         <Route path="/placement" exact component={Placement} />
         <Route path="/library" exact component={Library} />

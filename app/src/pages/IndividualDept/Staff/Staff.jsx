@@ -48,7 +48,7 @@ export default () => {
           Teaching Staff
         </h6>
 
-        <div className={styles.flexContainer}>{data.map(Item)}</div>
+        <div className={styles.flexContainer}>{teaching.map(Item)}</div>
 
         <h6
           className={styles.heading_primary_main}
@@ -57,14 +57,14 @@ export default () => {
           Non - Teaching Staff
         </h6>
 
-        <div className={styles.flexContainer}>{data.map(Item)}</div>
+        <div className={styles.flexContainer}>{nonteaching.map(Item)}</div>
       </main>
       <Footer />
     </Fragment>
   );
 };
 
-const data = [
+const teaching = [
   {
     image:
       "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Dr.P.%20Gopal.jpg",
@@ -94,6 +94,41 @@ const data = [
       "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Mr.B.%20Kumarakurubaran.jpg",
     name: "Dr.B. Kumaragurubaran",
     designation: "Assistant Professor (Sr.Gr.)",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com",
+  },
+];
+
+const nonteaching = [
+  {
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Mr.%20R.%20Dhanabalan.jpg",
+    name: "Mr. R. Dhanabalan",
+    designation: "Administrative Staff",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com",
+  },
+  {
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Mariasoosai.jpg",
+    name: "Mr.I.Mariasoosai",
+    designation: "Administrative Staff",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com",
+  },
+  {
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/V.Anusuya.jpg",
+    name: "Mrs.V.Anusuya",
+    designation: "Office Assistant",
+    resume: "#test",
+    mail: "santhoshvelr@gmail.com",
+  },
+  {
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/P.Ramaraj.jpg",
+    name: "Mr.P.Ramaraj",
+    designation: "Office Assistant",
     resume: "#test",
     mail: "santhoshvelr@gmail.com",
   },
