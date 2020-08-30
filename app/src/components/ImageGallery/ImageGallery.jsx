@@ -21,7 +21,7 @@ export default function ImageGallery(props) {
     <>
       <div className={classes.gallery__container}>
         {
-          props.sources.map((source, index) => <GalleryItem src={source.src} alt={!!source.alt ? `slide-${index}` : source.alt} index={index} />)
+          props.sources.map((source, index) => <GalleryItem key={index} src={source.src} alt={!!source.alt ? `slide-${index}` : source.alt} index={index} />)
         }
       </div>
       <Viewer
