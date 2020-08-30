@@ -19,7 +19,7 @@ const Accordion = (props) => {
   };
 
   return (
-    <div className={styles.accordion_section} style={props.style}>
+    <div className={styles.accordion_section} style={props.style} data-aos="zoom-in-up" data-aos-delay="100">
       <button className={styles.accordion_title} onClick={toggleActive}>
         <h6 className={styles.heading_primary_main}>{props.title}</h6>
         <span
