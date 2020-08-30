@@ -43,7 +43,7 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 1.2rem 2rem;
+    padding: 1rem;
 
     &:hover {
       background-color: lighten($color-primary-light, 50%);
@@ -57,14 +57,20 @@
     &_icons {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       margin-right: 1rem;
+      background: none !important;
+
+      &>span {
+        margin-bottom: 1rem;
+      }
     }
 
     &_text {
       padding: .3rem;
       font-size: 1.4rem;
+      align-self: center;
       color: $color-black !important;
     }
   }

@@ -44,7 +44,12 @@ export default function Flash() {
               events.map((value, key) => {
                 return <a key={key} href={value.link} className={classes.flash__link}>
                   <li className={classes.flash__item}>
-                    <span className="icon-calendar" style={{ marginRight: "1rem" }}></span>
+                    <div className={classes.flash__item_icons}>
+                      <span className="icon-calendar"></span>
+                      {
+                        value.isNew && <Badge>NEW</Badge>
+                      }
+                    </div>
                     <span className={classes.flash__item_text}>{value.name}</span>
                   </li>
                 </a>
@@ -60,7 +65,12 @@ export default function Flash() {
               links.map((value, key) => {
                 return <a key={key} href={value.link} className={classes.flash__link}>
                   <li className={classes.flash__item}>
-                    <span className="icon-link" style={{ marginRight: "1rem" }}></span>
+                    <div className={classes.flash__item_icons}>
+                      <span className="icon-link"></span>
+                      {
+                        value.isNew && <Badge>NEW</Badge>
+                      }
+                    </div>
                     <span className={classes.flash__item_text}>{value.name}</span>
                   </li>
                 </a>
