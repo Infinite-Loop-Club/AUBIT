@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 
 import styles from "./style.module.scss";
 import Gallery from "../components/Gallery";
+import Badge from "../components/Badge/Badge";
 
 export default function Home() {
   return (
@@ -49,7 +50,8 @@ export default function Home() {
                           return <a key={key} href={value.link} className={styles.flash__link}>
                             <li className={styles.flash__item}>
                               <span className="icon-globe" style={{ marginRight: "1rem" }}></span>
-                              <span className={styles.flash__item_text}>{value.name}</span>
+                              <span className={styles.flash__item_text}>{value.name}
+                                <Badge>new</Badge></span>
                             </li>
                           </a>
                         })

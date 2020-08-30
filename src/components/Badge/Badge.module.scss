@@ -1,0 +1,21 @@
+.badge {
+  display: inline-block;
+  background-color: #cf2828 !important;
+  color: white;
+  font-size: 1.2rem;
+  padding: .3rem .9rem;
+  align-self: center;
+  border-radius: 2rem;
+
+  &:first-child {
+    margin-right: 1rem;
+  }
+
+  &:last-child {
+    margin-left: 1rem;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+}
