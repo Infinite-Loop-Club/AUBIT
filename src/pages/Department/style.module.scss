@@ -6,6 +6,7 @@
 
 
 .main {
+  @include setWidth;
   margin-top: 10rem;
   margin-bottom: 3rem;
   overflow: hidden;
