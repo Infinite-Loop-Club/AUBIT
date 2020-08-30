@@ -15,10 +15,6 @@
     width: 40%;
   }
 
-  @include respond(tab-port) {
-    height: 20rem;
-  }
-
   @include respond(phone) {
     width: 100%;
     box-shadow: .5rem .5rem 2rem rgba($color-black, .2);
