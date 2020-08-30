@@ -6,17 +6,13 @@ import StaffCard from "../../../components/Card/Staff/StaffCard";
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
 
-
 function Item(value, index) {
-  return <div key={index} className={styles.flexItem}>
-    <StaffCard
-      {...value}
-    />
-  </div>
+  return (
+    <div key={index} className={styles.flexItem}>
+      <StaffCard {...value} />
+    </div>
+  );
 }
-
-
-
 
 export default () => {
   return (
@@ -30,7 +26,6 @@ export default () => {
           Department of Automobile Engineering
         </h4>
 
-
         <h6
           className={styles.heading_primary_main}
           style={{ marginBottom: "3rem" }}
@@ -39,11 +34,11 @@ export default () => {
         </h6>
 
         <StaffCard
-          image='/images/administration/dean.png'
-          name='Dr.T. Senthilkumar'
-          designation='Professor & Dean'
-          resume='#test'
-          mail='santhoshvelr@gmail.com'
+          image="/images/administration/dean.png"
+          name="Dr.T. Senthilkumar"
+          designation="Professor & Dean"
+          resume="#test"
+          mail="santhoshvelr@gmail.com"
         />
 
         <h6
@@ -53,9 +48,7 @@ export default () => {
           Teaching Staff
         </h6>
 
-        <div className={styles.flexContainer}>
-          {data.map(Item)}
-        </div>
+        <div className={styles.flexContainer}>{data.map(Item)}</div>
 
         <h6
           className={styles.heading_primary_main}
@@ -64,45 +57,44 @@ export default () => {
           Non - Teaching Staff
         </h6>
 
-        <div className={styles.flexContainer}>
-          {data.map(Item)}
-        </div>
-
+        <div className={styles.flexContainer}>{data.map(Item)}</div>
       </main>
       <Footer />
     </Fragment>
   );
 };
 
-
-
 const data = [
   {
-    image: "/images/administration/vc.png",
-    name: "Name",
-    designation: "Designamtion",
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Dr.P.%20Gopal.jpg",
+    name: "Dr. P. Gopal",
+    designation: "Head & Assistant Professor (Sl.Gr.)",
     resume: "#test",
-    mail: "santhoshvelr@gmail.com"
+    mail: "santhoshvelr@gmail.com",
   },
   {
-    image: "/images/administration/vc.png",
-    name: "Name",
-    designation: "Designamtion",
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/picture-navin.jpg",
+    name: "Dr.P. Navaneetha Krishnan",
+    designation: "Assistant Professor (Sr.Gr.)",
     resume: "#test",
-    mail: "santhoshvelr@gmail.com"
+    mail: "santhoshvelr@gmail.com",
   },
   {
-    image: "/images/administration/vc.png",
-    name: "Name",
-    designation: "Designamtion",
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/pillai.jpg",
+    name: "Dr.T. Parameshwaran Pillai",
+    designation: "Assistant Professor (Sr.Gr.)",
     resume: "#test",
-    mail: "santhoshvelr@gmail.com"
+    mail: "santhoshvelr@gmail.com",
   },
   {
-    image: "/images/administration/vc.png",
-    name: "Name",
-    designation: "Designamtion",
+    image:
+      "http://www.aubit.edu.in/departments/AutomobileEngineering/img/Mr.B.%20Kumarakurubaran.jpg",
+    name: "Dr.B. Kumaragurubaran",
+    designation: "Assistant Professor (Sr.Gr.)",
     resume: "#test",
-    mail: "santhoshvelr@gmail.com"
-  }
-]
+    mail: "santhoshvelr@gmail.com",
+  },
+];
