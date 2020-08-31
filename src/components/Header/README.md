@@ -1,15 +1,15 @@
-### Header
+## Header
 
 1. Ham:
    Ham usually appears in the mobile view. The function 'handleClick' is used to trigger the Ham. The useEffect used in line 11 is used to hide the Ham whenever the page is scrolled.
 
 The props and states of Header is listed below:
 
-## Props
+### Props
 
 1. Sticky - Used to make the Navbar, sticky
 
-## States
+### States
 
 1. [ham, setHam]:
 
