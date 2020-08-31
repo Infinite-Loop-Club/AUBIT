@@ -4,7 +4,7 @@
 
 Homepage contains link to several inner pages. Those are mentioned below:
 
-1.  [Administration](./Administration/README.md "Administration")
+1.  [Administration](./Administration/ "Administration")
 
 2.  [Courses](./Courses/README.md "Courses")
 
