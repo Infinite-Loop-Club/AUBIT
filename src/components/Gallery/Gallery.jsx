@@ -2,7 +2,9 @@ import React, { useRef } from "react";
 import TinySlider from "tiny-slider-react";
 import cx from "classnames";
 
-import { sources, settings } from './data';
+import { settings } from './config';
+import { sources } from "../../constants/slides";
+
 import classes from './Gallery.module.scss';
 
 export default function Gallery() {
