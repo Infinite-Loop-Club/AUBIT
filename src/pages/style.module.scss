@@ -139,9 +139,10 @@
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 1px .3rem 1.2rem rgba($color-black, 0.4);
+  background-color: $color-primary-light;
 
   &__heading {
-    color: $color-primary-light;
+    color: $color-white;
     font-size: 2rem;
     font-weight: 600;
   }
@@ -149,7 +150,8 @@
   &__list {
     list-style: none;
     margin-left: 1rem;
-
+    color: $color-white;
+    
     li {
       font-size: 1.5rem;
 
