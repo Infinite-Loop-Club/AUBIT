@@ -13,6 +13,7 @@ const news = [
 ];
 
 
+
 const events = [
   {
     name: "Online One Week Faculty Development Programme on Remote Sensing and GIS Applications in Sustainable Environmental Management (10.08.2020 to 14.08.20204",
@@ -36,6 +37,8 @@ const events = [
   }
 ];
 
+
+
 const links = [
   {
     name: "NIFR Overall",
@@ -53,5 +56,6 @@ const links = [
     isNew: true
   }
 ];
+
 
 export { news, events, links }

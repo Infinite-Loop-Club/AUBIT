@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './flash.module.scss';
-import { news, events, links } from './data';
+import { news, events, links } from '../../constants/flash';
 
 import Badge from "../Badge/Badge";
 
