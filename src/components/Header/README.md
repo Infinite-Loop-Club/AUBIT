@@ -7,7 +7,7 @@ The props and states of Header is listed below:
 
 ### Props
 
-1. Sticky - Used to make the Navbar, sticky
+1. sticky - Used to make the Navbar, sticky (The name of the prop is 'sticky')
 
 ### States
 
