@@ -4,19 +4,19 @@
 
 Homepage contains link to several inner pages. Those are mentioned below:
 
-1.  [Administration](./Administration/README.md "Administration")
+1.  [Administration](./Administration/ "Administration")
 
-2.  [Courses](./Courses/README.md "Courses")
+2.  [Courses](./Courses/ "Courses")
 
-3.  [Department](./Department/README.md "Department")
+3.  [Department](./Department/ "Department")
 
-4.  [Hostel](./Hostel/README.md "Hostel")
+4.  [Hostel](./Hostel/ "Hostel")
 
-5.  [Individual Departments](./IndividualDept/README.md "IndividualDepartments")
+5.  [Individual Departments](./IndividualDept/ "IndividualDepartments")
 
-6.  [Library](./Library/README.md "Library")
+6.  [Library](./Library/ "Library")
 
-7.  [Placement](./Placement/README.md "Placement")
+7.  [Placement](./Placement/ "Placement")
 
-8.  [StudentAffairs](./StudentAffairs/README.md "StudentAffairs")
+8.  [StudentAffairs](./StudentAffairs/ "StudentAffairs")
 
