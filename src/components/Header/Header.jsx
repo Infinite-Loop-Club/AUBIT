@@ -7,15 +7,19 @@ export default function Header(props) {
 
   const [ham, setHam] = useState(false);
 
+  // to close ham burger while scrolling
   useEffect(() => {
     window.onscroll = (event) => {
       setHam(false);
     }
   }, []);
 
+  // to open the hamburger
   function handleCLick() {
     setHam((old) => !old);
   }
+
+  // inorder to make a nav sticky  add keywork 'sticky' to props
 
   return (
     <header>
@@ -30,8 +34,6 @@ export default function Header(props) {
               : styles.nav
         }
       >
-        {/* <nav className={ham ? cx(styles.nav, styles.white_bg) : styles.nav}> */}
-        {/* <nav className={(sticky || props.sticky) ? cx(styles.nav, styles.sticky) : styles.nav}> */}
         <div
           className={styles.nav_container}
           style={props.sticky ? { padding: "1.5rem 0" } : {}}
@@ -55,22 +57,6 @@ export default function Header(props) {
               <a href="/administration" className={styles.nav__link}>
                 Administration{" "}
               </a>
-              {/* <div className={styles.nav__dropdown}>
-                <ol className={styles.nav__dropdown_list}>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Dean</li>
-                  </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Vice Chancellor</li>
-                  </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Registrar</li>
-                  </a>
-                  <a href="#ab" className={styles.nav__dropdown_link}>
-                    <li className={styles.nav__dropdown_item}>Additional Registrar</li>
-                  </a>
-                </ol>
-              </div> */}
             </li>
             <li className={styles.nav__item}>
               <p className={styles.nav__link} style={{ cursor: "pointer" }}>
@@ -125,6 +111,7 @@ export default function Header(props) {
               &nbsp;
             </div>
           </div>
+
         </div>
       </nav>
     </header>
