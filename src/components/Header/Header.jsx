@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import cx from "classnames";
 
 import styles from "./header.module.scss";
 
 export default function Header(props) {
-  // const [sticky, setSticky] = useState(false);
+
   const [ham, setHam] = useState(false);
 
-  // useEffect(() => {
-  //   window.onscroll = (event) => {
-  //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-  //       setSticky(true);
-  //     } else {
-  //       setSticky(false);
-  //     }
-  //   }
-  // }, []);
+  useEffect(() => {
+    window.onscroll = (event) => {
+      setHam(false);
+    }
+  }, []);
 
   function handleCLick() {
     setHam((old) => !old);
