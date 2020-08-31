@@ -1,4 +1,4 @@
-export const sources = [
+const sources = [
   {
     src: 'http://www.aubit.edu.in/departments/AutomobileEngineering/images/Gallery/1.JPG',
     alt: 'slide-1'
@@ -39,4 +39,11 @@ export const sources = [
     src: 'http://www.aubit.edu.in/departments/AutomobileEngineering/images/Gallery/10.JPG',
     alt: 'slide-10'
   }
-]
+];
+
+
+
+export { sources };
+
+
+

@@ -1,4 +1,4 @@
-export const sources = [
+const sources = [
   {
     src: '/images/hostel/image1.jpg',
     alt: 'slide-1'
@@ -47,4 +47,8 @@ export const sources = [
     src: '/images/hostel/image12.jpg',
     alt: 'slide-12'
   },
-]
+];
+
+
+
+export { sources };
