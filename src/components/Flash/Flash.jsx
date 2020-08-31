@@ -25,7 +25,7 @@ export default function Flash() {
                     <div className={classes.flash__item_icons}>
                       <span className="icon-globe"></span>
                       {
-                        value.isNew && <Badge>NEW</Badge>
+                        value.isNew && <Badge animate><span>N</span><span>E</span><span>W</span></Badge>
                       }
                     </div>
                     <span className={classes.flash__item_text}>{value.name}
@@ -47,7 +47,7 @@ export default function Flash() {
                     <div className={classes.flash__item_icons}>
                       <span className="icon-calendar"></span>
                       {
-                        value.isNew && <Badge>NEW</Badge>
+                        value.isNew && <Badge animate><span>N</span><span>E</span><span>W</span></Badge>
                       }
                     </div>
                     <span className={classes.flash__item_text}>{value.name}</span>
@@ -68,7 +68,7 @@ export default function Flash() {
                     <div className={classes.flash__item_icons}>
                       <span className="icon-link"></span>
                       {
-                        value.isNew && <Badge>NEW</Badge>
+                        value.isNew && <Badge animate><span>N</span><span>E</span><span>W</span></Badge>
                       }
                     </div>
                     <span className={classes.flash__item_text}>{value.name}</span>

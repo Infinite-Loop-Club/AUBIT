@@ -1,3 +1,5 @@
+@import '../../styles/variable.scss';
+
 .badge {
   display: inline-block;
   background-color: #cf2828 !important;
@@ -6,4 +8,50 @@
   padding: .3rem .9rem;
   align-self: center;
   border-radius: 2rem;
+}
+
+
+.badge_animate{
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+
+  span{
+    color: $color-white;
+  }
+
+  & :nth-child(odd){
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+    transform: translateY(20px) !important; 
+  }
+  
+}
+
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes shake{
+  0%{
+    transform: skew(20deg) translateY(2px);
+  }
+
+  50%{
+    transform: skew(-20deg) translateY(-2px);
+  }
+
+
+  100%{
+    transform: skew(0) translateY(0);
+  }
 }
