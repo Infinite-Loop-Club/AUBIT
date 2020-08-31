@@ -1,6 +1,6 @@
 ## Documentation
 
-### Home
+### Pages
 
 Homepage contains link to several inner pages. Those are mentioned below:
 
@@ -19,11 +19,4 @@ Homepage contains link to several inner pages. Those are mentioned below:
 7.  [Placement](./Placement/README.md "Placement")
 
 8.  [StudentAffairs](./StudentAffairs/README.md "StudentAffairs")
-
-
-
-
-
-
-
 
