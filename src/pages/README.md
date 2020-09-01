@@ -2,21 +2,23 @@
 
 ### Pages
 
-Homepage contains link to several inner pages. Those are mentioned below:
+This website consists of several inner pages. Those are mentioned below:
 
-1.  [Administration](./Administration/ "Administration")
+1.  [Home]()
 
-2.  [Courses](./Courses/ "Courses")
+2.  [Administration](./Administration/ "Administration")
 
-3.  [Department](./Department/ "Department")
+3.  [Courses](./Courses/ "Courses")
 
-4.  [Hostel](./Hostel/ "Hostel")
+4.  [Department](./Department/ "Department")
 
-5.  [Individual Departments](./IndividualDept/ "IndividualDepartments")
+5.  [Hostel](./Hostel/ "Hostel")
 
-6.  [Library](./Library/ "Library")
+6.  [Individual Departments](./IndividualDept/ "IndividualDepartments")
 
-7.  [Placement](./Placement/ "Placement")
+7.  [Library](./Library/ "Library")
 
-8.  [StudentAffairs](./StudentAffairs/ "StudentAffairs")
+8.  [Placement](./Placement/ "Placement")
+
+9.  [StudentAffairs](./StudentAffairs/ "StudentAffairs")
 
