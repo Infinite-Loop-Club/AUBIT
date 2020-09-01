@@ -1,6 +1,6 @@
 ## Courses
 
-The main objective of the courses page is to give an idea about the courses offered in BIT Campus. The courses are divided into two categories :
+The main objective of the courses page is to give an idea about the courses offered in BIT Campus. The courses are divided into two categories:
 
         1) UG Courses
         2) PG Courses
