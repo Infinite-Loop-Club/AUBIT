@@ -1,6 +1,4 @@
-## Documentation
-
-### Pages
+### Inner Pages
 
 This website consists of several inner pages. Those are mentioned below:
 
@@ -19,4 +17,3 @@ This website consists of several inner pages. Those are mentioned below:
 7.  [Placement](./Placement/ "Placement")
 
 8.  [StudentAffairs](./StudentAffairs/ "StudentAffairs")
-
