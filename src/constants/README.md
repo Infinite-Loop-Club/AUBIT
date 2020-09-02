@@ -11,6 +11,8 @@ This folder is seperately made to change the content without accessing the sourc
 1) src - To define image source
 2) alt - To display alternative text in case of image not visible
 
+***
+
 ### flash.js
 
 This file is used to render the contents in the Flash tabs. It consists of three arrays:
@@ -24,6 +26,8 @@ All three of them contains 3 attributes. Those are explained below:
 1) name - The content to be displayed in the website is given here
 2) link - The corresponding link to which it should redirect when clicked
 3) isNew - Boolean. "True" to display the NEW badge and "False" to not display NEW badge
+
+***
 
 ### Others
 
