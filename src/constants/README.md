@@ -2,7 +2,7 @@
 
 This folder is seperately made to change the content without accessing the source code.
 
-**_ slides.js _** and **_ flash.js _** files are used to change each content in the website. Both of these files are explained below:
+*** slides.js *** and *** flash.js *** files are used to change each content in the website. Both of these files are explained below:
 
 ### slides.js
 
