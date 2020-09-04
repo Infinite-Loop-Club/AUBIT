@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./card.module.scss";
 
-export default (props) => {
+export default function AdministrationCard(props) {
   return (
     <div className={styles.card}>
       <div className={styles.img}>

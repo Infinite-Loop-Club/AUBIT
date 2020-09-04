@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './flash.module.scss';
 import { news, events, links } from '../../constants/flash';
 
-import Badge from "../Badge/Badge";
+import Badge from "../Badge";
 
 export default function Flash() {
   return (

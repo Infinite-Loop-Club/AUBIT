@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
 
-
 function TableHeadCell(value, ind) {
   return <th key={ind} className={styles.th}>{value}</th>;
 }
@@ -17,8 +16,7 @@ function TableRow(value, ind) {
   </tr>
 }
 
-
-export default (props) => {
+export default function Table(props) {
   return (
     <div className={styles.container}>
       <table className={styles.table}>
