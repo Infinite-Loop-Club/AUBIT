@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './StaffCard.module.scss';
 
-export default function StaffCard({ style, image, name, designation, mail, resume }) {
+export default function StaffCard({ image, name, designation, mail, resume }) {
   return (
     <div className={classes.card}>
       <div className={classes.card__frame}>
