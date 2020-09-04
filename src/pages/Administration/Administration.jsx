@@ -1,14 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
 
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Card from "../../components/Card/Administration/Card";
-
-
-import Accordion from "../../components/Accordion/Accordion";
-
-import Table from "../../components/Table/Table";
+import { Header, Footer, AdministrationCard as Card, Accordion, Table } from '../../components';
 
 import { bog } from "../../constants/Table/administration";
 
