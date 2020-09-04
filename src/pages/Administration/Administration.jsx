@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Card from "../../components/Card/Adminstration/Card";
+import Card from "../../components/Card/Administration/Card";
 
 
 import Accordion from "../../components/Accordion/Accordion";
@@ -59,5 +59,3 @@ export default () => {
     </Fragment>
   );
 };
-
-
