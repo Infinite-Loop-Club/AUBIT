@@ -4,15 +4,17 @@
 </h1>
 
 
-### Docs
+### 📖 Docs
 
-1.  [Components](./components/ "Components")
+1.  [Components](./src/components/ "Components")
 
-2.  [Constant](./constants/ "Constant")
+2.  [Constant](./src/constants/ "Constant")
 
-3.  [Pages](./pages/ "Pages")
+3.  [Pages](./src/pages/ "Pages")
 
-4.  [Style](./styles/ "Style")
+4.  [Style](./src/styles/ "Style")
+
+<br />
 
 
 ## 🎨 Color Reference
@@ -30,7 +32,7 @@
 
 <br />
 
-
+## 🛠️ Setup
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
