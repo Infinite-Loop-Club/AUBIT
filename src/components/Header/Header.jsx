@@ -4,18 +4,17 @@ import cx from "classnames";
 import styles from "./header.module.scss";
 
 export default function Header(props) {
-
   const [ham, setHam] = useState(false);
 
   // to close ham burger while scrolling
   useEffect(() => {
     window.onscroll = (event) => {
       setHam(false);
-    }
+    };
   }, []);
 
   // to open the hamburger
-  function handleCLick() {
+  function handleClick() {
     setHam((old) => !old);
   }
 
@@ -30,16 +29,24 @@ export default function Header(props) {
               ? cx(styles.nav, styles.white_bg, styles.sticky)
               : cx(styles.nav, styles.sticky)
             : ham
-              ? cx(styles.nav, styles.white_bg)
-              : styles.nav
+            ? cx(styles.nav, styles.white_bg)
+            : styles.nav
         }
       >
         <div
           className={styles.nav_container}
           style={props.sticky ? { padding: "1.5rem 0" } : {}}
         >
-          <a className={styles.nav__brand} href="/" style={{ textDecoration: "none" }}>
-            <img src="/images/logo-maroon.png" alt="aubit" className={styles.nav__brand_logo} />
+          <a
+            className={styles.nav__brand}
+            href="/"
+            style={{ textDecoration: "none" }}
+          >
+            <img
+              src="/images/logo-maroon.png"
+              alt="aubit"
+              className={styles.nav__brand_logo}
+            />
             <h5 className={styles.nav__brand_text}>AUBIT</h5>
           </a>
 
@@ -90,7 +97,10 @@ export default function Header(props) {
                   <a href="/placement" className={styles.nav__dropdown_link}>
                     <li className={styles.nav__dropdown_item}>Placement</li>
                   </a>
-                  <a href="/studentAffairs" className={styles.nav__dropdown_link}>
+                  <a
+                    href="/studentAffairs"
+                    className={styles.nav__dropdown_link}
+                  >
                     <li className={styles.nav__dropdown_item}>
                       Student Affairs
                     </li>
@@ -100,7 +110,7 @@ export default function Header(props) {
             </li>
           </ul>
 
-          <div className={styles.burger} onClick={handleCLick}>
+          <div className={styles.burger} onClick={handleClick}>
             <div
               className={
                 ham
@@ -111,7 +121,6 @@ export default function Header(props) {
               &nbsp;
             </div>
           </div>
-
         </div>
       </nav>
     </header>
