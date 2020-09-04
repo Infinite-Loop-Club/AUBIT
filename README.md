@@ -1,3 +1,36 @@
+<h1 align="center">
+ <img src="./public/images/logo-maroon.png" alt="logo" width="25px" />
+ AU-BIT
+</h1>
+
+
+### Docs
+
+1.  [Components](./components/ "Components")
+
+2.  [Constant](./constants/ "Constant")
+
+3.  [Pages](./pages/ "Pages")
+
+4.  [Style](./styles/ "Style")
+
+
+## 🎨 Color Reference
+
+| Color        | Hex                                                                |
+| ------------ | ------------------------------------------------------------------ |
+| Primary Dark | ![#a61d22](https://via.placeholder.com/10/a61d22?text=+) `#a61d22` |
+| Primary Lite | ![#811216](https://via.placeholder.com/10/811216?text=+) `#811216` |
+| White        | ![#fff](https://via.placeholder.com/10/fff?text=+) `#fff`          |
+| Black        | ![#000](https://via.placeholder.com/10/000?text=+) `#000`          |
+
+<br />
+
+> FONT - overpass
+
+<br />
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
