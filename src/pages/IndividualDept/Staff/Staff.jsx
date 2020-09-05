@@ -1,10 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
 
-import StaffCard from "../../../components/Card/Staff/StaffCard";
-
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
+import { Header, Footer, StaffCard } from '../../../components';
 
 import { teaching, nonteaching } from "../../../constants/Staff/automobile";
 

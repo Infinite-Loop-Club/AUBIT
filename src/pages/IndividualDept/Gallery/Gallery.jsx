@@ -1,9 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
 
-import Gallery from "../../../components/ImageGallery/ImageGallery";
+import { Header, Footer, ImageGallery as Gallery } from '../../../components';
 
 import { sources } from "../../../constants/Gallery/automobile";
 

@@ -1,12 +1,8 @@
 import React, { Fragment } from "react";
 import cx from 'classnames';
-
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-
 import styles from "./style.module.scss";
-import Gallery from "../components/Gallery";
-import Flash from "../components/Flash";
+
+import { Header, Footer, Gallery, Flash } from '../components';
 
 export default function Home() {
   return (

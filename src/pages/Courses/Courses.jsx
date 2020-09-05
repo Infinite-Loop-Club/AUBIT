@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from "react";
 import styles from "./style.module.scss";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Table from "../../components/Table/Table";
+
+import { Header, Footer, Table } from '../../components';
 
 import cx from "classnames";
 

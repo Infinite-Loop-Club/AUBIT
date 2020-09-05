@@ -1,10 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
 
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-
-import Accordion from "../../components/Accordion/Accordion";
+import { Header, Footer, Accordion } from '../../components';
 
 export default () => {
   return (

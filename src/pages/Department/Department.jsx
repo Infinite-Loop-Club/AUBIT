@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+
+import { Header, Footer } from '../../components';
 
 function Card({ name, image, link, ...props }) {
   return (
