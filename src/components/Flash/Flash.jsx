@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './flash.module.scss';
 import { news, events, links } from '../../constants/flash';
 
 import Badge from "../Badge";
 
 export default function Flash() {
+
+  const [active, setActive] = useState(1);
+
   return (
     <div className={classes.flash}>
       <div className={classes.tab__trigger}>
         <ul>
-          <li><label htmlFor="tab1">News</label></li>
-          <li><label htmlFor="tab2">Events</label></li>
-          <li><label htmlFor="tab3">Links</label></li>
+          <li
+            style={active === 1 ? { borderColor: "#a61d22" } : {}}
+            onClick={() => setActive(1)}
+          >
+            <label htmlFor="tab1">News</label></li>
+          <li
+            style={active === 2 ? { borderColor: "#a61d22" } : {}}
+            onClick={() => setActive(2)}
+          >
+            <label htmlFor="tab2">Events</label></li>
+          <li
+            style={active === 3 ? { borderColor: "#a61d22" } : {}}
+            onClick={() => setActive(3)}
+          >
+            <label htmlFor="tab3">Links</label></li>
         </ul>
       </div>
       <div className={classes.tab__container_top}>
