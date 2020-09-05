@@ -45,8 +45,7 @@ export default function Header(props) {
             <img
               src="/images/logo-maroon.png"
               alt="aubit"
-              className={styles.nav__brand_logo}
-              style={props.sticky ? {} : { width: "8rem" }}
+              className={props.sticky ? styles.nav__brand_logo : styles.nav__brand_logo_main}
             />
             <h5 style={props.sticky ? {} : { display: "none" }} className={styles.nav__brand_text}>AUBIT</h5>
           </a>

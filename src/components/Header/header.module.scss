@@ -39,6 +39,16 @@ header {
       @include fullSizeImage;
     }
 
+    &_logo_main {
+      width: 8rem;
+
+      @include respond(tab-port){
+        width: 6rem;
+      }
+
+    }
+
+
     &_text {
       color: $color-primary-light;
       margin-left: 1.5rem;
