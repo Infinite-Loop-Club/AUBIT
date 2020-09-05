@@ -29,8 +29,8 @@ export default function Header(props) {
               ? cx(styles.nav, styles.white_bg, styles.sticky)
               : cx(styles.nav, styles.sticky)
             : ham
-            ? cx(styles.nav, styles.white_bg)
-            : styles.nav
+              ? cx(styles.nav, styles.white_bg)
+              : styles.nav
         }
       >
         <div
@@ -46,8 +46,9 @@ export default function Header(props) {
               src="/images/logo-maroon.png"
               alt="aubit"
               className={styles.nav__brand_logo}
+              style={props.sticky ? {} : { width: "8rem" }}
             />
-            <h5 className={styles.nav__brand_text}>AUBIT</h5>
+            <h5 style={props.sticky ? {} : { display: "none" }} className={styles.nav__brand_text}>AUBIT</h5>
           </a>
 
           <ul
