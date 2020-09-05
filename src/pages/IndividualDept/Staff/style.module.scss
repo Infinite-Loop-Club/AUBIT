@@ -27,3 +27,9 @@
     }
   }
 }
+
+.hod{
+  @include respond(tiny){
+    text-align: center;
+  }
+}

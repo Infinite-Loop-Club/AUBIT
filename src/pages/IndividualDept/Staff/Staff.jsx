@@ -34,13 +34,15 @@ export default () => {
           Head of the Department
         </h6>
 
-        <StaffCard
-          image="/images/administration/dean.png"
-          name="Dr.T. Senthilkumar"
-          designation="Professor & Dean"
-          resume="#test"
-          mail="santhoshvelr@gmail.com"
-        />
+        <div className={styles.hod}>
+          <StaffCard
+            image="/images/administration/dean.png"
+            name="Dr.T. Senthilkumar"
+            designation="Professor & Dean"
+            resume="#test"
+            mail="santhoshvelr@gmail.com"
+          />
+        </div>
 
         <h6
           className={styles.heading_primary_main}
