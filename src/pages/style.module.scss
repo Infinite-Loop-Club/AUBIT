@@ -16,6 +16,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
   background-image: linear-gradient(rgba($color-gray-1, 0.8), rgba($color-gray-1, 0.8)),
     url('/images/hero.jpg');
