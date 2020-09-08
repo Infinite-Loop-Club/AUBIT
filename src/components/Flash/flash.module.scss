@@ -7,13 +7,10 @@
   background-color: rgba($color-gray-1, .95);
   box-shadow: .5rem .8rem 3rem rgba($color-black, .4);
   max-height: 25rem;
-  width: 30%;
+  width: 50%;
 
   overflow: hidden;
 
-  @media only screen and (min-width : 600px) and (max-width: 700px) {
-    width: 40%;
-  }
 
   @include respond(phone) {
     width: 100%;
