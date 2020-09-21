@@ -4,7 +4,8 @@ The main objective of the courses page is to give an idea about the courses offe
 
         1) UG Courses
         2) PG Courses
-        
+
+
 ### States
 
 1.[ug, Setug]:

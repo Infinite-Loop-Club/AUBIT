@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./style.module.scss";
 
-import { Header, Footer, Accordion } from '../../components';
+import { Header, Footer, Accordion } from "../../components";
 
 export default () => {
   return (
@@ -28,7 +28,9 @@ export default () => {
             experience by servicing and maintain an inclusive, welcoming, and
             safe campus community.
           </p>
-          <h6 className={styles.heading_primary_main}>The main objectives are:</h6>
+          <h6 className={styles.heading_primary_main}>
+            The main objectives are:
+          </h6>
           <ul>
             <li>
               Helps in receiving the receipt of approval orders related with
@@ -36,17 +38,17 @@ export default () => {
               affairs, Chennai.
             </li>
             <li>
-              Helps in receiving the approval orders for name change of
-              students and break of study based on medical certificate from
-              Center of Student affairs ,Chennai.
+              Helps in receiving the approval orders for name change of students
+              and break of study based on medical certificate from Center of
+              Student affairs ,Chennai.
             </li>
             <li>
               To solve the discrepancy that arises at the time of payment of
               semester fees to AUKDC, Chennai.
             </li>
             <li>
-              To issue all kinds of Bonafide certificates, Transfer
-              certificates and course completion certificates .
+              To issue all kinds of Bonafide certificates, Transfer certificates
+              and course completion certificates .
             </li>
             <li>To avail Scholarships for all categories</li>
           </ul>
@@ -100,7 +102,9 @@ export default () => {
               student experience by servicing and maintain an inclusive,
               welcoming, and safe campus community.
             </p>
-            <h6 className={styles.heading_primary_main}>The main objectives are:</h6>
+            <h6 className={styles.heading_primary_main}>
+              The main objectives are:
+            </h6>
             <ul>
               <li>
                 Admission Process of UG(B.E. &
@@ -131,10 +135,11 @@ export default () => {
 
         <div className={styles.bottom_links}>
           <ul>
-            <li><a href="#ab">Staff</a></li>
+            <li>
+              <a href="#ab">Staff</a>
+            </li>
           </ul>
         </div>
-
       </main>
       <Footer />
     </Fragment>
